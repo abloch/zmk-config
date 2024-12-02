@@ -56,10 +56,10 @@
         layer_1 {
             bindings = <
 &bootloader  &kp F1            &kp F2            &kp F3            &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7    &kp F8          &kp F9         &kp F10           &bootloader
-&none        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(N4)       &kp LG(N5)         &mmv MOVE_DOWN   &kp LC(PG_UP)        &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
+&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)         &mmv MOVE_DOWN   &kp LC(PG_UP)        &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
 &none        &none             &none             &none             &none            &none              &mmv MOVE_LEFT   &kp LC(PAUSE_BREAK)  &kp LEFT  &kp ENTER       &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &none        &rgb_ug RGB_OFF   &rgb_ug RGB_ON    &rgb_ug RGB_EFF   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp LC(PAGE_DOWN)    &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none             &none
-&kp C_MUTE   &none             &none             &none             &none            &none              &mkp LCLK        &none                &none     &none           &none          &none
+&kp C_MUTE   &none             &none             &none             &none            &mo 1              &mkp LCLK        &mo 2                &none     &none           &none          &none
             >;
 
             display-name = "layer1";
@@ -69,7 +69,7 @@
         layer_2 {
             bindings = <
 &bootloader  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4    &mmv MOVE_UP     &kp F6      &kp F7            &kp F8      &kp F9            &kp F10           &bootloader
-&none        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)      &mmv MOVE_DOWN   &kp LG(N6)  &kp LG(NUMBER_7)  &kp LG(N8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &none
+&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)      &mmv MOVE_DOWN   &kp LA(N6)  &kp LA(NUMBER_7)  &kp LA(N8)  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &none
 &none        &none             &none             &none             &none             &none           &mmv MOVE_LEFT   &none       &none             &none       &none             &none             &none
 &none        &none             &soft_off         &sys_reset        &none             &none           &mmv MOVE_RIGHT  &none       &none             &sys_reset  &soft_off         &none             &none
 &none        &none             &none             &none             &none             &none           &mkp LCLK        &none       &none             &none       &none             &none
