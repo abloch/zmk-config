@@ -36,8 +36,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - H
   - {t: J, h: LGUI}
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - .
   - layer1
