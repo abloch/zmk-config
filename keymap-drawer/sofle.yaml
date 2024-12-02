@@ -80,11 +80,11 @@ layers:
   - F10
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+ 1
-  - Gui+ 2
-  - Gui+ 3
-  - {t: Gui+ 4, s: Gui+ $}
-  - {t: Gui+ 5, s: Gui+ %}
+  - Alt+ 1
+  - Alt+ 2
+  - Alt+ 3
+  - {t: Alt+ 4, s: Alt+ $}
+  - {t: Alt+ 5, s: Alt+ %}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Ctl+ PG UP
   - HOME
@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - layer1
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - layer2
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -145,17 +145,17 @@ layers:
   - F10
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+ 1
-  - Gui+ 2
-  - Gui+ 3
-  - Gui+ 4
-  - {t: Gui+ 5, s: Gui+ %}
+  - Alt+ 1
+  - Alt+ 2
+  - Alt+ 3
+  - Alt+ 4
+  - {t: Alt+ 5, s: Alt+ %}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: Gui+ 6, s: Gui+ ^}
-  - Gui+ 7
-  - {t: Gui+ 8, s: Gui+ *}
-  - Gui+ 9
-  - Gui+ 0
+  - {t: Alt+ 6, s: Alt+ ^}
+  - Alt+ 7
+  - {t: Alt+ 8, s: Alt+ *}
+  - Alt+ 9
+  - Alt+ 0
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -187,10 +187,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
