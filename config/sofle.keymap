@@ -52,10 +52,10 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1            &kp N2       &kp N3        &kp N4          &kp N5       &mmv MOVE_UP     &kp N6         &kp N7      &kp N8      &kp N9       &kp N0          &to 1
+&kp ESC     &kp N1            &kp N2       &kp N3        &kp N4          &kp N5       &mmv MOVE_UP     &kp N6         &kp N7      &kp N8      &kp N9       &kp N0          &kp LC(LG(Q))
 &kp TAB     &kp Q             &kp W        &kp E         &kp R           &kp T        &mmv MOVE_DOWN   &kp Y          &kp U       &kp I       &kp O        &kp P           &kp BSLH
 &kp LSHFT   &hm LEFT_SHIFT A  &hm LCTRL S  &hm LALT D    &hm LEFT_GUI F  &kp G        &mmv MOVE_LEFT   &kp H          &hm LGUI J  &hm LALT K  &hm LCTRL L  &hm LSHFT SEMI  &kp APOS
-&kp GRAVE   &kp Z             &kp X        &kp C         &kp V           &kp B        &mmv MOVE_RIGHT  &kp N          &kp M       &kp COMMA   &kp DOT      &kp QUESTION    &kp RET
+&kp GRAVE   &kp Z             &kp X        &kp C         &kp V           &kp B        &mmv MOVE_RIGHT  &kp N          &kp M       &kp COMMA   &kp DOT      &kp QUESTION    &mkp MK4
 &kp C_MUTE  &kp LCTRL         &kp LALT     &kp LEFT_GUI  &mo 1           &kp SPACE    &mkp LCLK        &kp BACKSPACE  &mo 2       &kp RET     &kp PLUS     &kp MINUS
             >;
 
@@ -66,9 +66,9 @@
         layer_1 {
             bindings = <
 &bootloader  &kp F1            &kp F2            &kp F3            &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7    &kp F8          &kp F9         &kp F10           &bootloader
-&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)         &mmv MOVE_DOWN   &kp LC(PG_UP)        &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
-&none        &none             &none             &none             &none            &none              &mmv MOVE_LEFT   &kp LC(PAUSE_BREAK)  &kp LEFT  &kp ENTER       &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none        &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &none             &none            &kp LSHFT          &mmv MOVE_RIGHT  &kp LC(PAGE_DOWN)    &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none             &none
+&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)         &mmv MOVE_DOWN   &none                &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
+&none        &none             &none             &none             &none            &none              &mmv MOVE_LEFT   &none                &kp LEFT  &none           &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none        &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &none             &none            &kp LSHFT          &mmv MOVE_RIGHT  &none                &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none             &none
 &kp C_MUTE   &none             &none             &none             &none            &none              &mkp LCLK        &none                &none     &none           &none          &none
             >;
 
@@ -78,11 +78,11 @@
 
         layer_2 {
             bindings = <
-&bootloader  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4      &mmv MOVE_UP     &kp F6              &kp F7            &kp F8             &kp F9            &kp F10           &bootloader
-&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)        &mmv MOVE_DOWN   &kp LA(N6)          &kp LA(NUMBER_7)  &kp LA(N8)         &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &none
-&none        &none             &none             &none             &none             &none             &mmv MOVE_LEFT   &none               &none             &none              &none             &none             &none
-&none        &none             &soft_off         &sys_reset        &none             &none             &mmv MOVE_RIGHT  &none               &none             &none              &none             &rgb_ug RGB_OFF   &rgb_ug RGB_ON
-&kp C_MUTE   &none             &none             &none             &none             &none             &mkp LCLK        &none               &none             &none              &none             &none
+&bootloader  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4      &mmv MOVE_UP     &kp F6              &kp F7          &kp F8             &kp F9            &kp F10           &bootloader
+&none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)        &mmv MOVE_DOWN   &kp LA(N6)          &kp LA(N7)      &kp LA(N8)         &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &none
+&none        &lk LS(LA(N1))    LS(LA(N2))        LS(LA(N3))        LS(LA(N4))        LS(LA(N5))        &mmv MOVE_LEFT   &kp LS(LA(N6))     &kp LS(LA(N7))  &kp LS(LA(N8))     &kp LS(LA(N9))    &kp LS(LA(N0))    &none
+&none        &none             &soft_off         &sys_reset        &none             &none             &mmv MOVE_RIGHT  &none               &none           &none              &none             &rgb_ug RGB_OFF   &rgb_ug RGB_ON
+&kp C_MUTE   &none             &none             &none             &none             &none             &mkp LCLK        &none               &none           &none              &none             &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
