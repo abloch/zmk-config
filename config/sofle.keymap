@@ -102,7 +102,7 @@
 &bootloader  &kp F1            &kp F2            &kp F3            &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7    &kp F8          &kp F9         &kp F10           &bootloader
 &none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)         &mmv MOVE_DOWN   &none                &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
 &none        &kp LEFT_SHIFT    &kp LCTRL         &kp LALT          &kp LEFT_GUI     &none              &mmv MOVE_LEFT   &none                &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&LSHFT       &rgb_ug RGB_TOG   &bl TOG           &none             &kp LGUI         &kp LSHFT          &mmv MOVE_RIGHT  &DEL                 &kp END   &kp DEL         &kp PAGE_DOWN  &none             &kp MB5
+&kp LSHFT       &rgb_ug RGB_TOG   &bl TOG           &none             &kp LGUI         &kp LSHFT          &mmv MOVE_RIGHT  &DEL                 &kp END   &kp DEL         &kp PAGE_DOWN  &none             &kp MB5
 &kp CPP      &none             &none             &kp LCTRL         &none            &none              &mkp LCLK        &none                &kp LALT  &none           &none          &mkp MB5         &none
             >;
 
