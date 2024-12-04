@@ -29,7 +29,7 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <450>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -66,7 +66,7 @@
 &bootloader  &kp F1            &kp F2            &kp F3            &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7    &kp F8          &kp F9         &kp F10           &bootloader
 &none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)         &mmv MOVE_DOWN   &none                &kp HOME  &kp UP          &kp PG_UP      &kp F11           &kp F12
 &none        &none             &none             &none             &none            &none              &mmv MOVE_LEFT   &none                &kp LEFT  &none           &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none        &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &none             &none            &kp LSHFT          &mmv MOVE_RIGHT  &none                &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none             &none
+&none        &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &none             &kp LGUI         &kp LSHFT          &mmv MOVE_RIGHT  &none                &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none             &none
 &kp C_MUTE   &none             &none             &none             &none            &none              &mkp LCLK        &none                &none     &none           &none          &none
             >;
 
