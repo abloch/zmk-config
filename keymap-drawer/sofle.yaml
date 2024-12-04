@@ -185,10 +185,10 @@ layers:
   - RGB TOG
   - $$mdi:volume-off$$
   - '&bt0'
-  - '&bt1'
-  - '&bt2'
-  - '&bt3'
-  - '&bt4'
+  - '&td1'
+  - '&td2'
+  - '&td3'
+  - '&td4'
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
