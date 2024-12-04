@@ -107,7 +107,7 @@ layers:
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - RGB TOG
-  - '&bl TOG'
+  - '&bl_TOG'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
   - $$mdi:apple-keyboard-shift$$
@@ -181,7 +181,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&bl TOG'
+  - '&bl_TOG'
   - RGB TOG
   - $$mdi:volume-off$$
   - '&bt0'
