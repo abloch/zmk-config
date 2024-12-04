@@ -184,7 +184,7 @@ layers:
   - '&bl BL_TOG'
   - RGB TOG
   - $$mdi:volume-off$$
-  - '&bt0'
+  - '&td0'
   - '&td1'
   - '&td2'
   - '&td3'
