@@ -116,7 +116,7 @@
 &none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)        &mmv MOVE_DOWN   &kp LA(N6)     &kp LA(N7)      &kp LA(N8)         &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &none
 &none        &kp LS(LA(N1))    &kp LS(LA(N2))    &kp LS(LA(N3))    &kp LS(LA(N4))    &kp LS(LA(N5))    &mmv MOVE_LEFT   &kp LS(LA(N6)) &kp LS(LA(N7))  &kp LS(LA(N8))     &kp LS(LA(N9))    &kp LS(LA(N0))    &none
 &none        &none             &soft_off         &sys_reset        &none             &none             &mmv MOVE_RIGHT  &none          &none           &none              &none             &bl BL_TOG        &rgb_ug RGB_TOG
-&kp C_MUTE   &bt0              &bt1              &bt2              &bt3              &bt4              &mkp RCLK        &none          &none           &none              &none             &none
+&kp C_MUTE   &bt0              &td1              &td2              &td3              &td4              &mkp RCLK        &none          &none           &none              &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
