@@ -102,12 +102,12 @@
 &bootloader   &kp F1            &kp F2            &kp F3            &kp F4           &kp F5            &mmv MOVE_UP     &kp F6        &kp F7          &kp F8             &kp F9           &kp F10            &bootloader
 &none         &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(N4)       &kp LA(N5)        &mmv MOVE_DOWN   &none         &kp HOME        &kp UP             &kp PG_UP        &kp F11            &kp F12
 &none         &kp LEFT_SHIFT    &kp LCTRL         &kp LALT          &kp LEFT_GUI     &none             &mmv MOVE_LEFT   &none         &kp LEFT        &kp DOWN_ARROW     &kp RIGHT        &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-&kp LSHFT     &rgb_ug RGB_TOG   &bl BL_TOG        &none             &kp LGUI         &kp LSHFT         &mmv MOVE_RIGHT  &kp DEL       &kp END         &kp DEL            &kp PAGE_DOWN    &none              &mkp MB5
-&kp C_PP      &none             &none             &kp LCTRL         &none            &none             &mkp LCLK        &none         &kp LALT        &none              &none            &none
+&kp LSHFT     &rgb_ug RGB_TOG   &none             &none             &none            &kp LSHFT         &mmv MOVE_RIGHT  &kp DEL       &kp END         &kp DEL            &kp PAGE_DOWN    &none              &mkp MB5
+&kp C_MUTE    &none             &none             &none             &none            &none             &mkp LCLK        &none         &kp LALT        &none              &none            &none
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         layer_2 {
@@ -115,11 +115,11 @@
 &bootloader  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &mmv MOVE_UP     &kp F6         &kp F7          &kp F8             &kp F9            &kp F10           &bootloader
 &none        &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)        &mmv MOVE_DOWN   &kp LA(N6)     &kp LA(N7)      &kp LA(N8)         &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &none
 &none        &kp LS(LA(N1))    &kp LS(LA(N2))    &kp LS(LA(N3))    &kp LS(LA(N4))    &kp LS(LA(N5))    &mmv MOVE_LEFT   &kp LS(LA(N6)) &kp LS(LA(N7))  &kp LS(LA(N8))     &kp LS(LA(N9))    &kp LS(LA(N0))    &none
-&none        &none             &soft_off         &sys_reset        &none             &none             &mmv MOVE_RIGHT  &none          &none           &none              &none             &bl BL_TOG        &rgb_ug RGB_TOG
-&kp C_MUTE   &td0              &td1              &td2              &td3              &td4              &mkp RCLK        &none          &none           &none              &none             &none
+&none        &none             &soft_off         &sys_reset        &none             &none             &mmv MOVE_RIGHT  &none          &none           &none              &none             &none             &rgb_ug RGB_TOG
+&kp C_PP     &td0              &td1              &td2              &td3              &td4              &mkp RCLK        &none          &none           &none              &none             &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
             display-name = "layer2";
         };
     };
