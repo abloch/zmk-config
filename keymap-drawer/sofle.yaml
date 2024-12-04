@@ -107,9 +107,9 @@ layers:
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - RGB TOG
-  - '&bl BL_TOG'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LGUI
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:backspace-reverse-outline$$
@@ -118,10 +118,10 @@ layers:
   - PgDn
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
-  - $$mdi:play-pause$$
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
@@ -181,9 +181,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&bl BL_TOG'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
-  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
   - '&td0'
   - '&td1'
   - '&td2'
