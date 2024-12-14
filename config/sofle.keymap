@@ -84,8 +84,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LG(A)))>
-            <&macro_wait_time 200>
-            ,< &kp LC(NUMBER_1)>;
+            , <&macro_wait_time 200>
+            , < &kp LC(NUMBER_1)>;
             label = "ARC1";
         };
     };
