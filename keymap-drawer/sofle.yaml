@@ -78,7 +78,7 @@ layers:
   - F8
   - F9
   - F10
-  - $$mdi:progress-download$$
+  - Gui+Sft+ Q
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
@@ -105,7 +105,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '=', s: +}
-  - $$mdi:progress-download$$
+  - '*'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '-', s: _}
@@ -122,12 +122,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:progress-download$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wsps:
@@ -143,7 +143,7 @@ layers:
   - Alt+ F8
   - Alt+ F9
   - Alt+ F10
-  - $$mdi:progress-download$$
+  - Gui+Sft+ Q
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
@@ -152,7 +152,7 @@ layers:
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&arc1'
-  - '&arc1'
+  - '&arc2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -170,7 +170,7 @@ layers:
   - Sft+Alt+ $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
+  - '*'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '-', s: _}
@@ -190,8 +190,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:progress-download$$', type: held}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
