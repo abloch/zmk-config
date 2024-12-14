@@ -86,7 +86,7 @@
             bindings = <
 &kp ESC     &kp N1            &kp N2       &kp N3      &kp N4          &kp N5    &kp UP     &kp N6  &kp N7          &kp N8      &kp N9       &kp N0         &kp LC(LG(Q))
 &kp TAB     &kp Q             &kp W        &kp E       &kp R           &kp T     &kp DOWN   &kp Y   &kp U           &kp I       &kp O        &kp P          &kp BSLH
-&kp GRAVE   &hm LEFT_SHIFT A  &hm LCTRL S  &hm LALT D  &hm LEFT_GUI F  &kp G     &kp LEFT   &kp H   &hm LEFT_GUI J  &hm LALT K  &hm LCTRL L  &kp BACKSPACE  &kp RSHFT
+&kp GRAVE   &hm LEFT_SHIFT A  &hm LCTRL S  &hm LALT D  &hm LEFT_GUI F  &kp G     &kp LEFT   &kp H   &hm LEFT_GUI J  &hm LALT K  &hm LCTRL L  &kp BACKSPACE  &caps_word
 &kp LCTRL   &kp Z             &kp X        &kp C       &kp V           &kp B     &kp RIGHT  &kp N   &kp M           &kp COMMA   &kp DOT      &kp SLASH      &mkp MB4
 &kp C_MUTE  &kp LSHFT         &kp LALT     &kp LGUI    &lt 1 SPACE     &to 1     &kp RET    &tog 1  &lt 1 SPACE     &kp RET     &none        &kp TILDE
             >;
