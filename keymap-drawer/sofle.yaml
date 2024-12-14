@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - Ctl+Gui+ Q
+  - '&backlock'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - $$mdi:alpha-w-box$$
   - {t: '`', s: '~'}
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -39,7 +39,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:alpha-w-box$$
+  - +
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -63,7 +63,7 @@ layers:
   - {t: wsps, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-space$$', h: wsps}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
   - '~'
   symb:
   - {t: base, h: toggle}
@@ -92,7 +92,7 @@ layers:
   - PG UP
   - F11
   - F12
-  - {t: '`', s: '~'}
+  - '~'
   - (
   - )
   - _
@@ -103,8 +103,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '-', s: _}
-  - +
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '=', s: +}
   - $$mdi:progress-download$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -116,7 +116,7 @@ layers:
   - END
   - $$mdi:backspace-reverse-outline$$
   - PgDn
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '?'
   - '&mkp MB5'
   - PLAY PAUSE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -157,7 +157,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
+  - '~'
   - (
   - )
   - _
@@ -168,7 +168,7 @@ layers:
   - Alt+Sft+ $$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+Alt+ $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '[', s: '{'}
