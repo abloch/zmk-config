@@ -118,7 +118,7 @@
             bindings = <
 &to 0        &kp LA(1)         &kp LA(2)   &kp LA(3)    &kp LA(4)     &kp LA(5)     &mmv MOVE_UP         &kp LA(6)  &kp LA(7)    &kp LA(8)   &kp LA(9)     &kp LA(0)    &bootloader
 &kp TAB      &kp LBRC          &kp RBRC    &kp COLON    &kp DQT       &kp NUBS      &mmv MOVE_DOWN       &none      &none        &none       &none         &none        &none
-&kp GRAVE    &hm LSHFT KP_LPAR &kp LCTRL   &kp LALT     &kp LEFT_GUI  &none         &mmv MOVE_LEFT       &none      &kp LA(LEFT) &none       &kp LA(RIGHT  &none        &none
+&kp GRAVE    &hm LSHFT KP_LPAR &kp LCTRL   &kp LALT     &kp LEFT_GUI  &none         &mmv MOVE_LEFT       &none      &kp LA(LEFT) &none       &kp LA(RIGHT) &none        &none
 &kp LCTRL    &kp KP_LPAR       &none       &none        &none         &none         &mmv MOVE_RIGHT      &none      &none        &none       &none         &none        &mkp MB5
 &kp C_MUTE   &none             &none       &none        &none         &none         &mkp LCLK            &none      &none        &none       &none         &none
               >;
