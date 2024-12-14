@@ -74,7 +74,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BACKLOCK";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp LG(LS(Q))>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp LG(LC(Q))>;
         };
     };
 
@@ -128,7 +128,7 @@
 
         layer_1 {
             bindings = <
-&to 0             &kp F1                &kp F2                 &kp F3          &kp F4             &kp F5              &mmv MOVE_UP     &kp F6  &kp F7     &kp F8          &kp F9         &kp F10        &kp LG(LS(Q))
+&to 0             &kp F1                &kp F2                 &kp F3          &kp F4             &kp F5              &mmv MOVE_UP     &kp F6  &kp F7     &kp F8          &kp F9         &kp F10        &kp LG(LC(Q))
 &kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SQT             &mmv MOVE_DOWN   &none   &kp HOME   &kp UP          &kp PG_UP      &kp F11        &kp F12
 &kp TILDE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp EXCLAMATION    &kp DOLLAR          &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp BACKSPACE  &kp EQUAL
 &kp STAR          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS       &kp LESS_THAN      &kp GREATER_THAN    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL         &kp PAGE_DOWN  &kp QUESTION   &mkp MB5
@@ -141,7 +141,7 @@
 
         layer_2 {
             bindings = <
-&to 0             &kp LA(F1)            &kp LA(F2)             &kp LA(F3)      &kp LA(F4)         &kp LA(F5)          &mmv MOVE_UP     &kp LA(F6)   &kp LA(F7)        &kp LA(F8)  &kp LA(F9)         &kp LA(F10)    &kp LG(LS(Q))
+&to 0             &kp LA(F1)            &kp LA(F2)             &kp LA(F3)      &kp LA(F4)         &kp LA(F5)          &mmv MOVE_UP     &kp LA(F6)   &kp LA(F7)        &kp LA(F8)  &kp LA(F9)         &kp LA(F10)    &kp LG(LC(Q))
 &kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SQT             &mmv MOVE_DOWN   &arc1        &arc2             &none       &none              &none          &none
 &kp TILDE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp EXCLAMATION    &kp DOLLAR          &mmv MOVE_LEFT   &none        &kp LA(LS(LEFT))  &none       &kp LS(LA(RIGHT))  &kp BACKSPACE  &none
 &kp STAR          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS       &kp LESS_THAN      &kp GREATER_THAN    &mmv MOVE_RIGHT  &none        &none             &none       &none              &none          &mkp MB5
