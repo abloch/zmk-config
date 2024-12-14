@@ -97,6 +97,16 @@
 
             label = "ARC1";
         };
+        arc2: arc2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(LC(LG(A)))>,
+                <&macro_wait_time 200>,
+                <&kp LC(NUMBER_3)>;
+
+            label = "ARC2";
+        };
     };
 
     keymap {
