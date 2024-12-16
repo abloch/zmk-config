@@ -122,12 +122,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wsps:
@@ -136,9 +136,9 @@ layers:
   - '&arc2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&tripple_flash'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&tripple_flash'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -187,11 +187,16 @@ layers:
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&bl BL_CYCLE'
+  - '&bl BL_TOG'
+combos:
+- p: [39, 40]
+  k: $$mdi:progress-download$$
+- p: [51, 50]
+  k: $$mdi:progress-download$$
