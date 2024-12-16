@@ -100,11 +100,20 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_LAYER1";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&sl 1>, <&sl 1>, <&to 1>;
+            bindings = <&lt 1 SPACE>, <&to 1>;
 
             tapping-term-ms = <250>;
         };
+        
+        space_layer2: space_layer2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_LAYER2";
+            #binding-cells = <0>;
+            bindings = <&lt 2 SPACE>, <&sl 2>;
 
+            tapping-term-ms = <250>;
+        };
+        
         tripple_flash: tripple_flash {
             compatible = "zmk,behavior-tap-dance";
             label = "TRIPPLE_FLASH";
@@ -121,14 +130,7 @@
             tapping-term-ms = <150>;
         };
 
-        space_layer2: space_layer2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACE_LAYER2";
-            #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&sl 2>, <&sl 2>, <&to 2>;
 
-            tapping-term-ms = <250>;
-        };
     };
 
     scroll_encoder: scroll_encoder {
