@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_LAYER2";
             #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&sl 2>;
+            bindings = <&lt 2 SPACE>, <&to 2>;
 
             tapping-term-ms = <250>;
         };
