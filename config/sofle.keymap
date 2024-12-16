@@ -16,6 +16,10 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&sk { release-after-ms = <10000>; };
+
+&lt { tapping-term-ms = <100>; };
+
 / {
     behaviors {
         mmv {
