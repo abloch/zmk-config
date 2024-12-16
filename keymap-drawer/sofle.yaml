@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - '&mkp MB4'
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:apple-keyboard-command$$
@@ -122,10 +122,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -145,17 +145,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+Ctl+Q
   - $$mdi:keyboard-tab$$
-  - Alt+1
-  - Alt+2
-  - Alt+3
-  - Alt+4
-  - {t: Alt+5, s: Alt+%}
+  - '{'
+  - '}'
+  - ':'
+  - '"'
+  - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - Alt+6
   - {t: Alt+7, s: Alt+&}
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
   - {t: Alt+0, s: Alt+)}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
   - (
@@ -177,20 +177,20 @@ layers:
   - '~'
   - '*'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Ctl+Alt+Gui+A
-  - Alt+Ctl+Gui+S
-  - Alt+Ctl+Gui+T
-  - Alt+Ctl+Gui+C
-  - Alt+Ctl+Gui+B
+  - Alt+1
+  - Alt+2
+  - {t: Alt+3, s: Alt+#}
+  - Alt+4
+  - {t: Alt+5, s: Alt+%}
   - '&mkp MB5'
   - PLAY PAUSE
   - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB EFF
