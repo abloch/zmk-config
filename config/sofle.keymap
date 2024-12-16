@@ -79,6 +79,20 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp LG(LC(Q))>;
         };
+
+        space_layer1: space_layer1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_LAYER1";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&sl 1>, <&to 1>;
+        };
+
+        space_layer2: space_layer2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_LAYER2";
+            #binding-cells = <0>;
+            bindings = <&lt 2 SPACE>, <&sl 2>, <&to 2>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -118,11 +132,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1            &kp N2       &kp N3      &kp N4          &kp N5    &kp UP     &kp N6  &kp N7          &kp N8      &kp N9       &kp N0         &backlock
-&kp TAB     &kp Q             &kp W        &kp E       &kp R           &kp T     &kp DOWN   &kp Y   &kp U           &kp I       &kp O        &kp P          &caps_word
-&kp GRAVE   &hm LEFT_SHIFT A  &hm LCTRL S  &hm LALT D  &hm LEFT_GUI F  &kp G     &kp LEFT   &kp H   &hm LEFT_GUI J  &hm LALT K  &hm LCTRL L  &kp BACKSPACE  &kp PLUS
-&kp LCTRL   &kp Z             &kp X        &kp C       &kp V           &kp B     &kp RIGHT  &kp N   &kp M           &kp COMMA   &kp DOT      &kp SLASH      &mkp MB4
-&kp C_MUTE  &kp LSHFT         &kp LALT     &kp LGUI    &lt 1 SPACE     &to 1     &kp RET    &sl 2   &lt 2 SPACE     &kp RET     &kp MINUS    &kp TILDE
+&kp ESC     &kp N1            &kp N2       &kp N3      &kp N4          &kp N5           &kp UP     &kp N6         &kp N7          &kp N8      &kp N9       &kp N0         &backlock
+&kp TAB     &kp Q             &kp W        &kp E       &kp R           &kp T            &kp DOWN   &kp Y          &kp U           &kp I       &kp O        &kp P          &caps_word
+&kp GRAVE   &hm LEFT_SHIFT A  &hm LCTRL S  &hm LALT D  &hm LEFT_GUI F  &kp G            &kp LEFT   &kp H          &hm LEFT_GUI J  &hm LALT K  &hm LCTRL L  &kp BACKSPACE  &kp PLUS
+&kp LCTRL   &kp Z             &kp X        &kp C       &kp V           &kp B            &kp RIGHT  &kp N          &kp M           &kp COMMA   &kp DOT      &kp SLASH      &mkp MB4
+&kp C_MUTE  &kp LSHFT         &kp LALT     &kp LGUI    &kp LEFT_GUI    &space_layer1    &kp RET    &space_layer2  &kp RET         &kp RET     &kp MINUS    &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
