@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: symb}
-  - {t: symb, h: toggle}
+  - $$mdi:apple-keyboard-command$$
+  - '&space_layer1'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: wsps, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-space$$', h: wsps}
+  - '&space_layer2'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '-', s: _}
   - '~'
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-shift$$
@@ -190,8 +190,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
