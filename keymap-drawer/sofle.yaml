@@ -166,7 +166,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+Gui+T
   - Alt+Ctl+KC LEFT
-  - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Alt+Ctl+KC LGUI, h: '$$mdi:gesture-tap-hold$$'}
   - Sft+Alt+KC RIGHT
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
