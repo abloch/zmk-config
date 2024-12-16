@@ -56,8 +56,8 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-option$$
-  - LGUI
-  - $$mdi:apple-keyboard-command$$
+  - '&gui_raycast'
+  - '&gui_raycast'
   - '&space_layer1'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&space_layer2'
