@@ -167,11 +167,11 @@
 
         layer_1 {
             bindings = <
-&to 0             &kp F1                &kp F2                 &kp F3          &kp F4             &kp F5      &mmv MOVE_UP     &kp F6  &kp F7    &kp F8          &kp F9         &kp F10        &kp LG(LC(Q))
-&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SQT     &mmv MOVE_DOWN   &none   &kp HOME  &kp UP          &kp PG_UP      &kp F11        &kp F12
-&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EXCLAMATION    &kp PIPE    &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp BACKSPACE  &kp EQUAL
-&kp LC(C)         &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE  &kp DOLLAR         &kp STAR    &mmv MOVE_RIGHT  &none   &kp END   &kp DEL         &kp PAGE_DOWN  &kp QUESTION   &mkp MB5
-&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)       &kp LSHFT          &none       &mkp LCLK        &none   &kp RET   &none           &none          &none
+&to 0             &kp F1                &kp F2                 &kp F3     &kp F4             &kp F5      &mmv MOVE_UP     &kp F6  &kp F7    &kp F8          &kp F9         &kp F10        &kp LG(LC(Q))
+&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp SQT     &mmv MOVE_DOWN   &none   &kp HOME  &kp UP          &kp PG_UP      &kp F11        &kp F12
+&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EXCLAMATION    &kp PIPE    &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp BACKSPACE  &kp EQUAL
+&kp LC(C)         &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &kp DOLLAR         &kp STAR    &mmv MOVE_RIGHT  &none   &kp END   &kp DEL         &kp PAGE_DOWN  &kp QUESTION   &mkp MB5
+&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)  &kp LSHFT          &none       &mkp LCLK        &none   &kp RET   &none           &none          &none
             >;
 
             display-name = "symb";
