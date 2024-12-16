@@ -78,7 +78,7 @@ layers:
   - F8
   - F9
   - F10
-  - Gui+Ctl+ Q
+  - Gui+Ctl+Q
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
@@ -92,10 +92,10 @@ layers:
   - PG UP
   - F11
   - F12
-  - '~'
+  - '|'
   - (
   - )
-  - _
+  - {t: '-', s: _}
   - '!'
   - $
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -108,7 +108,7 @@ layers:
   - '*'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '-', s: _}
+  - _
   - <
   - '>'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -123,74 +123,74 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', type: held}
-  - $$mdi:progress-download$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wsps:
   - {t: base, h: toggle}
-  - Alt+ F1
-  - Alt+ F2
-  - Alt+ F3
-  - Alt+ F4
-  - Alt+ F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Alt+ F6
-  - Alt+ F7
-  - Alt+ F8
-  - Alt+ F9
-  - Alt+ F10
-  - Gui+Ctl+ Q
-  - $$mdi:keyboard-tab$$
-  - '{'
-  - '}'
-  - ':'
-  - '"'
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&arc1'
   - '&arc2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '~'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+Ctl+Q
+  - $$mdi:keyboard-tab$$
+  - Alt+1
+  - Alt+2
+  - Alt+3
+  - Alt+4
+  - {t: Alt+5, s: Alt+%}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: Alt+7, s: Alt+&}
+  - {t: Alt+8, s: Alt+*}
+  - {t: Alt+9, s: Alt+(}
+  - {t: Alt+0, s: Alt+)}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - (
   - )
-  - _
+  - {t: '-', s: _}
   - '!'
   - $
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Alt+Sft+ $$mdi:arrow-left-bold$$
+  - Alt+Sft+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft+Alt+ $$mdi:arrow-right-bold$$
+  - Sft+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+C
+  - {t: ',', s: <}
+  - .
+  - '|'
+  - '~'
   - '*'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '-', s: _}
-  - <
-  - '>'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Alt+Gui+A
+  - Alt+Ctl+Gui+S
+  - Alt+Ctl+Gui+T
+  - Alt+Ctl+Gui+C
+  - Alt+Ctl+Gui+B
   - '&mkp MB5'
   - PLAY PAUSE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:progress-download$$', type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
