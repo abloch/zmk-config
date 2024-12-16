@@ -18,7 +18,10 @@
 
 &sk { release-after-ms = <10000>; };
 
-&lt { tapping-term-ms = <100>; };
+&lt {
+    tapping-term-ms = <100>;
+    flavor = "tap-unless-interrupted";
+};
 
 / {
     behaviors {
