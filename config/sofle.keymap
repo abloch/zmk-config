@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -13,10 +16,10 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
-&sk { release-after-ms = <10000>; };
+&sk { release-after-ms = <5000>; };
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <50>;
     flavor = "balanced";
     hold-while-undecided;
     quick-tap-ms = <0>;
@@ -24,7 +27,7 @@
 };
 
 &sl {
-    release-after-ms = <10000>;
+    release-after-ms = <5000>;
     ignore-modifiers;
     lazy;
 };
@@ -102,7 +105,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&sl 1>, <&to 1>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
         };
 
         tripple_flash: tripple_flash {
@@ -127,7 +130,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 SPACE>, <&sl 2>, <&to 2>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
         };
     };
 
