@@ -55,7 +55,7 @@ layers:
   - '&mkp MB4'
   - $$mdi:volume-off$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - '&gui_raycast'
   - '&gui_raycast'
   - '&space_layer1'
@@ -165,7 +165,7 @@ layers:
   - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+Gui+T
-  - Alt+Sft+$$mdi:arrow-left-bold$$
+  - Alt+Ctl+$$mdi:arrow-left-bold$$
   - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - Sft+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
