@@ -167,7 +167,7 @@ layers:
   - Alt+Ctl+Gui+T
   - Alt+Ctl+$$mdi:arrow-left-bold$$
   - {t: Alt+Ctl+LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - Ctl+Alt+RIGHT)
+  - Ctl+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
