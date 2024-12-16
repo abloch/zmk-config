@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -100,7 +103,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_LAYER1";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&sl 1>, <&to 1>;
+            bindings = <&lt 1 SPACE>, <&sl 1>, <&sl 1>, <&to 1>;
 
             tapping-term-ms = <250>;
         };
@@ -125,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_LAYER2";
             #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&sl 2>, <&to 2>;
+            bindings = <&lt 2 SPACE>, <&sl 2>, <&sl 2>, <&to 2>;
 
             tapping-term-ms = <250>;
         };
