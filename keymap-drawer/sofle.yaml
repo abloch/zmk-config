@@ -108,7 +108,7 @@ layers:
   - Ctl+C
   - <
   - '>'
-  - _
+  - {t: '=', s: +}
   - $
   - '*'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
