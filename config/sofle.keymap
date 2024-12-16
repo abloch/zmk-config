@@ -88,6 +88,8 @@
             label = "SPACE_LAYER1";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&sl 1>, <&to 1>;
+
+            tapping-term-ms = <100>;
         };
 
         space_layer2: space_layer2 {
@@ -95,6 +97,8 @@
             label = "SPACE_LAYER2";
             #binding-cells = <0>;
             bindings = <&lt 2 SPACE>, <&sl 2>, <&to 2>;
+
+            tapping-term-ms = <100>;
         };
 
         tripple_flash: tripple_flash {
@@ -178,11 +182,11 @@
 
         layer_1 {
             bindings = <
-&to 0             &kp F1                &kp F2                 &kp F3     &kp F4             &kp F5           &mmv MOVE_UP     &kp F6  &kp F7    &kp F8          &kp F9         &kp F10        &kp LG(LC(Q))
-&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp SQT          &mmv MOVE_DOWN   &none   &kp HOME  &kp UP          &kp PG_UP      &kp F11        &kp F12
-&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EXCLAMATION    &kp PIPE         &mmv MOVE_LEFT   &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp BACKSPACE  &kp EQUAL
-&kp LC(C)         &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &kp SEMI           &kp AMPERSAND    &mmv MOVE_RIGHT  &none   &kp END   &kp DEL         &kp PAGE_DOWN  &kp QUESTION   &mkp MB5
-&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)  &kp LSHFT          &none            &mkp LCLK        &none   &kp RET   &none           &none          &none
+&to 0             &kp F1                &kp F2                 &kp F3     &kp F4             &kp F5           &mmv MOVE_UP     &kp F6     &kp F7    &kp F8          &kp F9         &kp F10        &kp LG(LC(Q))
+&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp SQT          &mmv MOVE_DOWN   &none      &kp HOME  &kp UP          &kp PG_UP      &kp F11        &kp F12
+&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EXCLAMATION    &kp PIPE         &mmv MOVE_LEFT   &none      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp BACKSPACE  &kp EQUAL
+&kp LC(C)         &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &kp SEMI           &kp AMPERSAND    &mmv MOVE_RIGHT  &none      &kp END   &kp DEL         &kp PAGE_DOWN  &kp QUESTION   &mkp MB5
+&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)  &kp LSHFT          &kp SPACE        &mkp LCLK        &kp SPACE  &kp RET   &none           &none          &none
             >;
 
             display-name = "symb";
@@ -195,7 +199,7 @@
 &kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)            &kp LA(N9)         &kp LA(N0)       &none
 &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EXCL           &kp PIPE            &mmv MOVE_LEFT   &none             &kp LA(LS(LEFT))  &sk LA(LC(LEFT_GUI))  &kp LS(LA(RIGHT))  &kp BACKSPACE    &none
 &kp LC(C)         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp DOLLAR         &kp STAR            &mmv MOVE_RIGHT  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)            &kp LA(NUMBER_4)   &kp LA(N5)       &mkp MB5
-&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)       &kp LSHFT          &none               &mkp LCLK        &none             &kp RET           &none                 &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
+&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)       &kp LSHFT          &kp SPACE           &mkp LCLK        &kp SPACE         &kp RET           &none                 &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
             >;
 
             display-name = "wsps";
