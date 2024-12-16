@@ -165,12 +165,12 @@ layers:
   - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+Gui+T
-  - Alt+Ctl+KC LEFT
-  - {t: Alt+Ctl+KC LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - Sft+Alt+KC RIGHT
+  - Alt+Ctl+$$mdi:arrow-left-bold$$
+  - {t: Alt+Ctl+LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - Sft+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - Ctl+C
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - _
