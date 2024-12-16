@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -21,6 +24,12 @@
     hold-while-undecided;
     quick-tap-ms = <0>;
     require-prior-idle-ms = <100>;
+};
+
+&sl {
+    release-after-ms = <10000>;
+    ignore-modifiers;
+    lazy;
 };
 
 / {
