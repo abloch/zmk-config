@@ -193,8 +193,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&bl BL_CYCLE'
-  - '&bl BL_TOG'
+  - RGB EFF
+  - RGB TOG
 combos:
 - p: [39, 40]
   k: $$mdi:progress-download$$
