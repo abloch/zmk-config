@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -104,7 +107,7 @@
 
             tapping-term-ms = <250>;
         };
-        
+
         space_layer2: space_layer2 {
             compatible = "zmk,behavior-tap-dance";
             label = "SPACE_LAYER2";
@@ -113,7 +116,7 @@
 
             tapping-term-ms = <250>;
         };
-        
+
         tripple_flash: tripple_flash {
             compatible = "zmk,behavior-tap-dance";
             label = "TRIPPLE_FLASH";
@@ -129,8 +132,6 @@
 
             tapping-term-ms = <150>;
         };
-
-
     };
 
     scroll_encoder: scroll_encoder {
@@ -163,6 +164,22 @@
 
             label = "ARC2";
         };
+
+        tab_left: tab_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T)>, <&macro_wait_time 80>, <&kp LEFT_BRACKET>;
+
+            label = "TAB_LEFT";
+        };
+
+        tab_right: tab_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T)>, <&macro_wait_time 80>, <&kp RIGHT_BRACKET>;
+
+            label = "TAB_RIGHT";
+        };
     };
 
     combos {
@@ -177,6 +194,11 @@
             bindings = <&bootloader>;
             key-positions = <51 50>;
         };
+
+        to_layter3 {
+            bindings = <&to 3>;
+            key-positions = <28 16 30>;
+        };
     };
 
     keymap {
@@ -184,11 +206,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1            &kp N2       &kp N3        &kp N4          &kp N5           &kp UP     &kp N6         &kp N7          &kp N8      &kp N9       &kp N0               &backlock
-&kp TAB     &kp Q             &kp W        &kp E         &kp R           &kp T            &kp DOWN   &kp Y          &kp U           &kp I       &kp O        &kp P                &caps_word
-&kp GRAVE   &kp A             &kp S        &kp D         &kp F           &kp G            &kp LEFT   &kp H          &kp J           &kp K       &kp L        &kp BACKSPACE        &kp PLUS
-&kp LCTRL   &kp Z             &kp X        &kp C         &kp V           &kp B            &kp RIGHT  &kp N          &kp M           &kp COMMA   &kp DOT      &kp SLASH            &mkp MB4
-&kp C_MUTE  &sk LSHFT         &kp LALT     &gui_raycast  &gui_raycast    &space_layer1    &kp RET    &space_layer2  &kp RET         &kp RET     &kp MINUS    &kp TILDE
+&kp ESC     &kp N1     &kp N2    &kp N3        &kp N4        &kp N5           &kp UP     &kp N6         &kp N7   &kp N8     &kp N9     &kp N0         &backlock
+&kp TAB     &kp Q      &kp W     &kp E         &kp R         &kp T            &kp DOWN   &kp Y          &kp U    &kp I      &kp O      &kp P          &caps_word
+&kp GRAVE   &kp A      &kp S     &kp D         &kp F         &kp G            &kp LEFT   &kp H          &kp J    &kp K      &kp L      &kp BACKSPACE  &kp PLUS
+&kp LCTRL   &kp Z      &kp X     &kp C         &kp V         &kp B            &kp RIGHT  &kp N          &kp M    &kp COMMA  &kp DOT    &kp SLASH      &mkp MB4
+&kp C_MUTE  &sk LSHFT  &kp LALT  &gui_raycast  &gui_raycast  &space_layer1    &kp RET    &space_layer2  &kp RET  &kp RET    &kp MINUS  &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -210,15 +232,27 @@
 
         layer_2 {
             bindings = <
-&to 0             &arc1                 &arc2                  &none           &none              &tripple_flash      &mmv MOVE_UP     &tripple_flash    &none             &none                 &none              &none            &kp LG(LC(Q))
-&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)            &kp LA(N9)         &kp LA(N0)       &none
-&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EXCL           &kp PIPE            &mmv MOVE_LEFT   &none             &kp LA(LS(LEFT))  &sk LA(LC(LEFT_GUI))  &kp LS(LA(RIGHT))  &kp BACKSPACE    &none
-&kp LC(C)         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp DOLLAR         &kp STAR            &mmv MOVE_RIGHT  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)            &kp LA(NUMBER_4)   &kp LA(N5)       &mkp MB5
-&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)       &kp LSHFT          &kp SPACE           &mkp LCLK        &kp SPACE         &kp RET           &sk LCTRL             &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
+&to 0             &arc1                 &arc2                  &none           &none              &tripple_flash      &mmv MOVE_UP     &tripple_flash     &none             &none                 &none              &none            &kp LG(LC(Q))
+&kp TAB           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp LA(NUMBER_6)   &kp LA(N7)        &kp LA(N8)            &kp LA(N9)         &kp LA(N0)       &none
+&kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EXCL           &kp PIPE            &mmv MOVE_LEFT   &kp LA(LC(LG(T)))  &kp LA(LS(LEFT))  &sk LA(LC(LEFT_GUI))  &kp LS(LA(RIGHT))  &kp BACKSPACE    &none
+&kp LC(C)         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp DOLLAR         &kp STAR            &mmv MOVE_RIGHT  &kp LA(NUMBER_1)   &kp LA(NUMBER_2)  &kp LA(N3)            &kp LA(NUMBER_4)   &kp LA(N5)       &mkp MB5
+&kp C_PLAY_PAUSE  &kp LG(X)             &kp LG(C)              &kp LG(V)       &kp LSHFT          &kp SPACE           &mkp LCLK        &kp SPACE          &kp RET           &sk LCTRL             &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
             >;
 
             display-name = "wsps";
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
+        };
+
+        np_zlj {
+            bindings = <
+&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &trans  &trans              &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N7        &kp N8  &kp N9              &tab_left         &tab_right
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6        &kp LA(UP_ARROW)  &kp LA(EQUAL)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp NUMBER_1  &kp N2  &kp N3              &kp LA(DOWN)      &kp LA(MINUS)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans        &kp N0  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)
+            >;
+
+            label = "numpad/zellij";
         };
     };
 };
