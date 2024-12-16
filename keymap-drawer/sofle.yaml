@@ -165,9 +165,9 @@ layers:
   - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+Gui+T
-  - Alt+Ctl+$$mdi:arrow-left-bold$$
+  - Alt+Ctl+KC LEFT
   - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - Sft+Alt+$$mdi:arrow-right-bold$$
+  - Sft+Alt+KC RIGHT
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+C
