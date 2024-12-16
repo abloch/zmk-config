@@ -109,7 +109,7 @@ layers:
   - <
   - '>'
   - {t: '=', s: +}
-  - $
+  - {t: ;, s: ':'}
   - '*'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
