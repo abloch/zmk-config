@@ -38,7 +38,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - +
   - $$mdi:apple-keyboard-control$$
   - Z
