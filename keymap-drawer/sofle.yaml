@@ -105,7 +105,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '=', s: +}
-  - Ctl+C
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - <
   - '>'
   - {t: '=', s: +}
@@ -170,7 +170,7 @@ layers:
   - Sft+Alt+KC RIGHT
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+C
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - _
