@@ -34,6 +34,23 @@
 
 / {
     behaviors {
+
+        space_layer1: space_layer1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_LAYER1";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&to 1>;
+            tapping-term-ms = <350>;
+        };
+
+        space_layer2: space_layer2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACE_LAYER2";
+            #binding-cells = <0>;
+            bindings = <&lt 2 SPACE>, <&to 2>;
+            tapping-term-ms = <350>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -99,37 +116,11 @@
             bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp LG(LC(Q))>;
         };
 
-        space_layer1: space_layer1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACE_LAYER1";
-            #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&to 1>;
-
-            tapping-term-ms = <250>;
-        };
-
-        space_layer2: space_layer2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACE_LAYER2";
-            #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&to 2>;
-
-            tapping-term-ms = <250>;
-        };
-
-        tripple_flash: tripple_flash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TRIPPLE_FLASH";
-            #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&bootloader>;
-        };
-
         gui_raycast: gui_raycast {
             compatible = "zmk,behavior-tap-dance";
             label = "GUI_RAYCAST";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LG(D)>;
-
             tapping-term-ms = <150>;
         };
 
@@ -300,12 +291,11 @@
         };
 
         layer_2 {
-            bindings = <
-&to 0      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &none             &none       &tripple_flash      &mmv MOVE_UP     &tripple_flash     &none             &none             &none              &none            &kp LG(LC(Q))
-&kp TAB    &kp LBRC          &kp RBRC          &colon_semicolon  &kp DQT     &kp SINGLE_QUOTE    &mmv MOVE_DOWN   &kp LA(N6)         &kp LA(N7)        &kp LA(N8)        &kp LA(N9)         &kp LA(N0)       &none
-&kp QMARK  &kp KP_LPAR       &kp KP_RPAR       &kp PLUS          &kp EXCL    &kp DOLLAR          &mmv MOVE_LEFT   &kp LA(LC(LG(T)))  &kp LA(LC(LEFT))  &sk LA(LC(LGUI))  &kp LC(LA(RIGHT))  &kp BACKSPACE    &none
-&kp LG(Z)  &kp LBKT          &kp RBKT          &kp EQUAL         &kp DOLLAR  &kp STAR            &mmv MOVE_RIGHT  &kp LA(N1)         &kp LA(N2)        &kp LA(N3)        &kp LA(N4)         &kp LA(N5)       &mkp MB5
-&kp C_PP   &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(V)   &kp SPACE           &mkp RCLK        &kp SPACE          &sk LEFT_SHIFT    &sk LEFT_SHIFT    &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
+            bindings = <      
+&to 0      &kp LS(N1)        &kp LS(N 2)       &kp LS(N3)        &kp LS(N4)   &kp LS(N5)          &mmv MOVE_UP     &kp LS(N6)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)         &kp LS(N0)       &kp LG(LC(Q))
+&kp QMARK  &kp KP_LPAR       &kp KP_RPAR       &kp PLUS          &kp EXCL     &kp DOLLAR          &mmv MOVE_LEFT   &kp LA(LC(LG(T)))  &kp LA(LC(LEFT))  &sk LA(LC(LGUI))  &kp LC(LA(RIGHT))  &kp BACKSPACE    &none
+&kp LG(Z)  &kp LBKT          &kp RBKT          &kp EQUAL         &kp DOLLAR   &kp STAR            &mmv MOVE_RIGHT  &kp LA(N1)         &kp LA(N2)        &kp LA(N3)        &kp LA(N4)         &kp LA(N5)       &mkp MB5
+&kp C_PP   &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(V)    &kp SPACE           &mkp RCLK        &kp SPACE          &sk LEFT_SHIFT    &sk LEFT_SHIFT    &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
             >;
 
             display-name = "wsps";
