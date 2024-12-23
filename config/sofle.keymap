@@ -191,7 +191,7 @@
         };
 
         stay_in_layer3 {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <28 30 16>;
         };
 
