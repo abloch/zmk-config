@@ -189,7 +189,7 @@
             bindings = <&tog 4>;
             key-positions = <28 30 16>;
         };
-
+        
         slash {
             bindings = <&kp SLASH>;
             key-positions = <42 30>;
@@ -231,7 +231,7 @@
         };
 
         copy {
-            bindings = <&kp MINUS>;
+            bindings = <&kp LG(C)>;
             key-positions = <34 35 29>;
         };
 
