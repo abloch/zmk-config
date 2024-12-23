@@ -737,6 +737,14 @@ rect.held, rect.combo.held {
 <tspan x="532" dy="-0.6em">Gui+</tspan><tspan x="532" dy="1.2em">Sft+Z</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<path d="M196,145 l-37,2" class="combo"/>
+<path d="M196,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="182" y="132" width="28" height="26" class="combo"/>
+<a href="#arrows">
+<text x="196" y="145" class="combo tap layer-activator">arrows</text>
+</a><text x="196" y="156" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-symb">
@@ -1182,6 +1190,14 @@ rect.held, rect.combo.held {
 <text x="532" y="161" class="combo tap">
 <tspan x="532" dy="-0.6em">Gui+</tspan><tspan x="532" dy="1.2em">Sft+Z</tspan>
 </text>
+</g>
+<g class="combo combopos-16">
+<path d="M196,145 l-37,2" class="combo"/>
+<path d="M196,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="182" y="132" width="28" height="26" class="combo"/>
+<a href="#arrows">
+<text x="196" y="145" class="combo tap layer-activator">arrows</text>
+</a><text x="196" y="156" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1656,6 +1672,14 @@ rect.held, rect.combo.held {
 <tspan x="532" dy="-0.6em">Gui+</tspan><tspan x="532" dy="1.2em">Sft+Z</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<path d="M196,145 l-37,2" class="combo"/>
+<path d="M196,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="182" y="132" width="28" height="26" class="combo"/>
+<a href="#arrows">
+<text x="196" y="145" class="combo tap layer-activator">arrows</text>
+</a><text x="196" y="156" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-np/zlj">
@@ -2096,6 +2120,14 @@ rect.held, rect.combo.held {
 <tspan x="532" dy="-0.6em">Gui+</tspan><tspan x="532" dy="1.2em">Sft+Z</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<path d="M196,145 l-37,2" class="combo"/>
+<path d="M196,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="182" y="132" width="28" height="26" class="combo"/>
+<a href="#arrows">
+<text x="196" y="145" class="combo tap layer-activator">arrows</text>
+</a><text x="196" y="156" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-arrows">
@@ -2528,6 +2560,14 @@ rect.held, rect.combo.held {
 <text x="532" y="161" class="combo tap">
 <tspan x="532" dy="-0.6em">Gui+</tspan><tspan x="532" dy="1.2em">Sft+Z</tspan>
 </text>
+</g>
+<g class="combo combopos-16">
+<path d="M196,145 l-37,2" class="combo"/>
+<path d="M196,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="182" y="132" width="28" height="26" class="combo"/>
+<a href="#arrows">
+<text x="196" y="145" class="combo tap layer-activator">arrows</text>
+</a><text x="196" y="156" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

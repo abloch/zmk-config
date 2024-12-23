@@ -358,3 +358,5 @@ combos:
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 42]
   k: Gui+Sft+Z
+- p: [28, 30, 29]
+  k: {t: arrows, h: toggle}
