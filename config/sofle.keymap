@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -181,13 +185,13 @@
         };
 
         to_layer3_onekey {
-            bindings = <&sl 3>;
-            key-positions = <28 16 30>;
+            bindings = <&tog 3>;
+            key-positions = <28 30 29>;
         };
 
         stay_in_layer3 {
-            bindings = <&tog 3>;
-            key-positions = <28 16 30 27>;
+            bindings = <&tog 4>;
+            key-positions = <28 30 16>;
         };
 
         slash {
@@ -208,11 +212,6 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <43 42>;
-        };
-
-        to_layer4 {
-            bindings = <&tog 4>;
-            key-positions = <30 29 28>;
         };
 
         scrollup {
@@ -297,11 +296,11 @@
 
         layer_4 {
             bindings = <
-&to 0          &trans  &trans  &trans  &trans  &trans            &msc SCRL_UP    &trans  &trans    &trans          &trans           &trans         &trans
-&trans         &trans  &trans  &trans  &trans  &kp LA(T)         &msc SCRL_DOWN  &trans  &kp HOME  &kp UP_ARROW    &kp PG_UP        &kp LA(P)      &trans
-&trans         &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(L))  &kp LA(EQUAL)
-&kp LS(LG(Z))  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp END   &kp DEL         &kp PAGE_DOWN    &trans         &kp LA(MINUS)
-&trans         &trans  &trans  &trans  &trans  &kp LEFT_SHIFT    &trans          &trans  &trans    &trans          &trans           &trans
+&to 0          &trans  &trans  &trans  &trans          &trans            &msc SCRL_UP    &trans  &trans    &trans          &trans           &trans         &trans
+&trans         &trans  &trans  &trans  &trans          &kp LA(T)         &msc SCRL_DOWN  &trans  &kp HOME  &kp UP_ARROW    &kp PG_UP        &kp LA(P)      &trans
+&trans         &trans  &trans  &trans  &msc SCRL_UP    &trans            &trans          &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(L))  &kp LA(EQUAL)
+&kp LS(LG(Z))  &trans  &trans  &trans  &msc SCRL_DOWN  &trans            &trans          &trans  &kp END   &kp DEL         &kp PAGE_DOWN    &trans         &kp LA(MINUS)
+&trans         &trans  &trans  &trans  &trans          &kp LEFT_SHIFT    &trans          &trans  &trans    &trans          &trans           &trans
             >;
 
             label = "arrows";
