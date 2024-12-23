@@ -82,7 +82,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ':', h: ;}
+  - {t: ;, h: ':', s: ':'}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -119,10 +119,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
   - $$mdi:play-pause$$
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
@@ -147,7 +147,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ':', h: ;}
+  - {t: ;, h: ':', s: ':'}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -184,10 +184,10 @@ layers:
   - {t: Alt+5, s: Alt+%}
   - '&mkp MB5'
   - $$mdi:play-pause$$
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:keyboard-space$$', type: held}
@@ -249,7 +249,7 @@ layers:
   - Alt+$$mdi:arrow-down-bold$$
   - {t: Alt+-, s: Alt+_}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -300,7 +300,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - Sft+Gui+L
   - {t: Alt+=, s: Alt++}
-  - Sft+Gui+Z
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -352,5 +352,13 @@ combos:
   k: {t: symb, h: toggle}
 - p: [60, 59]
   k: {t: wsps, h: toggle}
-- p: [59, 57]
-  k: {t: base, h: toggle}
+- p: [34, 35, 29]
+  k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
+- p: [34, 35, 30]
+  k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
+- p: [34, 35, 27]
+  k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
+- p: [34, 35, 43]
+  k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+- p: [34, 35, 42]
+  k: Gui+Sft+Z
