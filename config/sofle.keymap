@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -180,8 +184,6 @@
             key-positions = <51 50>;
         };
 
-    
-
         stay_in_layer3 {
             bindings = <&tog 3>;
             key-positions = <28 30 16>;
@@ -250,6 +252,11 @@
         redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <34 35 42>;
+        };
+
+        tolayer4 {
+            bindings = <&tog 4>;
+            key-positions = <28 30 29>;
         };
     };
 
