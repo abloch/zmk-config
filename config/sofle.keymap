@@ -212,13 +212,13 @@
 
         scrollup {
             bindings = <&msc SCRL_UP>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <22 31>;
         };
 
         scrolldown {
             bindings = <&msc SCRL_DOWN>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <35 31>;
         };
 
@@ -234,31 +234,31 @@
 
         copy {
             bindings = <&kp LG(C)>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <34 35 29>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <34 35 30>;
         };
 
         cut {
             bindings = <&kp LG(X)>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <34 35 27>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <34 35 43>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
-            timeout-ms = <300>;
+            timeout-ms = <200>;
             key-positions = <34 35 42>;
         };
 
