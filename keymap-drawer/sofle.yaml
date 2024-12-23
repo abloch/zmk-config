@@ -330,8 +330,10 @@ combos:
   k: $$mdi:progress-download$$
 - p: [51, 50]
   k: $$mdi:progress-download$$
-- p: [28, 30, 16]
+- p: [28, 30, 29]
   k: {t: np/zlj, h: toggle}
+- p: [28, 30, 16]
+  k: {t: arrows, h: toggle}
 - p: [42, 30]
   k: {t: /, s: '?'}
 - p: [29, 43]
@@ -358,5 +360,3 @@ combos:
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 42]
   k: Gui+Sft+Z
-- p: [28, 30, 29]
-  k: {t: arrows, h: toggle}
