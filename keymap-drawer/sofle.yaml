@@ -344,9 +344,9 @@ combos:
   k: _
 - p: [30, 29, 28]
   k: {t: arrows, h: toggle}
-- p: [22, 29]
+- p: [22, 31]
   k: $$mdi:pan-up$$
-- p: [35, 29]
+- p: [35, 31]
   k: $$mdi:pan-down$$
 - p: [56, 57]
   k: {t: symb, h: toggle}
