@@ -82,7 +82,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ;, h: ':', s: ':'}
+  - {t: ':', h: ;}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -147,7 +147,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ;, h: ':', s: ':'}
+  - {t: ':', h: ;}
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -330,6 +330,8 @@ combos:
   k: $$mdi:progress-download$$
 - p: [51, 50]
   k: $$mdi:progress-download$$
+- p: [30, 29, 28]
+  k: {t: arrows, h: toggle}
 - p: [28, 30, 29]
   k: {t: np/zlj, h: toggle}
 - p: [28, 30, 16]
