@@ -332,8 +332,6 @@ combos:
   k: $$mdi:progress-download$$
 - p: [30, 29, 28]
   k: {t: arrows, h: toggle}
-- p: [28, 30, 29]
-  k: {t: np/zlj, h: toggle}
 - p: [28, 30, 16]
   k: {t: np/zlj, h: toggle}
 - p: [42, 30]
