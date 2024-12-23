@@ -180,10 +180,7 @@
             key-positions = <51 50>;
         };
 
-        toggle_layer4 {
-            bindings = <&tog 4>;
-            key-positions = <30 29 28>;
-        };
+    
 
         stay_in_layer3 {
             bindings = <&tog 3>;
