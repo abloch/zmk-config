@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - RGB EFF
-  - ''
+  - RGB TOG
   np/zlj:
   - {t: base, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
