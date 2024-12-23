@@ -112,7 +112,7 @@ layers:
   - $
   - '*'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - END
   - $$mdi:backspace-reverse-outline$$
   - PG DN
@@ -327,8 +327,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [39, 40]
-  k: $$mdi:progress-download$$
-- p: [51, 50]
   k: $$mdi:progress-download$$
 - p: [28, 30, 29]
   k: {t: np/zlj, h: toggle}
