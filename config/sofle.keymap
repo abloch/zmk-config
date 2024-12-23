@@ -3,7 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
- #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 // #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -298,7 +301,7 @@
 
         layer_4 {
             bindings = <
-&trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans    &trans          &trans           &trans         &trans
+&to 0          &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans    &trans          &trans           &trans         &trans
 &trans         &trans  &trans  &trans  &trans  &kp LA(T)         &trans  &trans  &kp HOME  &kp UP_ARROW    &kp PG_UP        &kp LA(P)      &trans
 &trans         &trans  &trans  &trans  &trans  &trans            &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(L))  &kp LA(EQUAL)
 &kp LS(LG(Z))  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &kp END   &kp DEL         &kp PAGE_DOWN    &trans         &kp LA(MINUS)
