@@ -352,5 +352,3 @@ combos:
   k: {t: symb, h: toggle}
 - p: [60, 59]
   k: {t: wsps, h: toggle}
-- p: [59, 57]
-  k: {t: base, h: toggle}

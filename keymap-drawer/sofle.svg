@@ -715,14 +715,6 @@ rect.held, rect.combo.held {
 <text x="572" y="289" class="combo tap layer-activator">wsps</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-13">
-<path d="M462,294 l54,0" class="combo"/>
-<path d="M462,294 l-54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="462" y="294" class="combo tap layer-activator">base</text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-symb">
@@ -1146,14 +1138,6 @@ rect.held, rect.combo.held {
 <a href="#wsps">
 <text x="572" y="289" class="combo tap layer-activator">wsps</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-13">
-<path d="M462,294 l54,0" class="combo"/>
-<path d="M462,294 l-54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="462" y="294" class="combo tap layer-activator">base</text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1606,14 +1590,6 @@ rect.held, rect.combo.held {
 <text x="572" y="289" class="combo tap layer-activator">wsps</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-13">
-<path d="M462,294 l54,0" class="combo"/>
-<path d="M462,294 l-54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="462" y="294" class="combo tap layer-activator">base</text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-np/zlj">
@@ -2030,14 +2006,6 @@ rect.held, rect.combo.held {
 <text x="572" y="289" class="combo tap layer-activator">wsps</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-13">
-<path d="M462,294 l54,0" class="combo"/>
-<path d="M462,294 l-54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="462" y="294" class="combo tap layer-activator">base</text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-4">
@@ -2448,14 +2416,6 @@ rect.held, rect.combo.held {
 <a href="#wsps">
 <text x="572" y="289" class="combo tap layer-activator">wsps</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-13">
-<path d="M462,294 l54,0" class="combo"/>
-<path d="M462,294 l-54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="462" y="294" class="combo tap layer-activator">base</text>
-</a><text x="462" y="305" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
