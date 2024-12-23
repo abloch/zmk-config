@@ -16,7 +16,7 @@
 &sk { release-after-ms = <5000>; };
 
 &lt {
-    tapping-term-ms = <50>;
+    tapping-term-ms = <250>;
     flavor = "balanced";
     hold-while-undecided;
     quick-tap-ms = <0>;
