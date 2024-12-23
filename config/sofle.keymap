@@ -180,11 +180,16 @@
             key-positions = <51 50>;
         };
 
-        stay_in_layer3 {
+        tolayer3 {
             bindings = <&tog 3>;
-            key-positions = <28 30 16>;
+            key-positions = <28 30 29>;
         };
 
+        tolayer4 {
+            bindings = <&tog 4>;
+            key-positions = <28 30 16>;
+        };
+        
         slash {
             bindings = <&kp SLASH>;
             key-positions = <42 30>;
@@ -250,10 +255,6 @@
             key-positions = <34 35 42>;
         };
 
-        tolayer4 {
-            bindings = <&tog 4>;
-            key-positions = <28 30 29>;
-        };
     };
 
     keymap {
