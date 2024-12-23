@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -189,7 +193,7 @@
             bindings = <&tog 4>;
             key-positions = <28 30 16>;
         };
-        
+
         slash {
             bindings = <&kp SLASH>;
             key-positions = <42 30>;
@@ -213,13 +217,13 @@
         scrollup {
             bindings = <&msc SCRL_UP>;
             timeout-ms = <200>;
-            key-positions = <22 31>;
+            key-positions = <34 18>;
         };
 
         scrolldown {
             bindings = <&msc SCRL_DOWN>;
             timeout-ms = <200>;
-            key-positions = <35 31>;
+            key-positions = <31 34>;
         };
 
         tolayer1 {
@@ -235,19 +239,19 @@
         copy {
             bindings = <&kp LG(C)>;
             timeout-ms = <200>;
-            key-positions = <34 35 29>;
+            key-positions = <34 41>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             timeout-ms = <200>;
-            key-positions = <34 35 30>;
+            key-positions = <34 43>;
         };
 
         cut {
             bindings = <&kp LG(X)>;
             timeout-ms = <200>;
-            key-positions = <34 35 27>;
+            key-positions = <34 40>;
         };
 
         undo {
@@ -259,9 +263,8 @@
         redo {
             bindings = <&kp LG(LS(Z))>;
             timeout-ms = <200>;
-            key-positions = <34 35 42>;
+            key-positions = <34 35 40>;
         };
-
     };
 
     keymap {
