@@ -260,7 +260,7 @@ layers:
   - {t: '0', s: )}
   - Alt+$$mdi:arrow-left-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  '4':
+  arrows:
   - {t: base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -343,7 +343,7 @@ combos:
 - p: [43, 42]
   k: _
 - p: [30, 29, 28]
-  k: {t: '4', h: toggle}
+  k: {t: arrows, h: toggle}
 - p: [22, 29]
   k: $$mdi:pan-up$$
 - p: [35, 29]
