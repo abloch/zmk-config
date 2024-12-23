@@ -162,7 +162,7 @@ layers:
   - )
   - +
   - '!'
-  - $
+  - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+Gui+T
   - Alt+Ctl+$$mdi:arrow-left-bold$$
@@ -332,6 +332,8 @@ combos:
   k: $$mdi:progress-download$$
 - p: [28, 16, 30]
   k: {t: np/zlj, h: '$$mdi:gesture-tap-hold$$'}
+- p: [28, 16, 30, 27]
+  k: {t: np/zlj, h: toggle}
 - p: [42, 30]
   k: {t: /, s: '?'}
 - p: [29, 43]
@@ -340,8 +342,6 @@ combos:
   k: {t: '-', s: _}
 - p: [43, 42]
   k: _
-- p: [28, 16, 30, 27]
-  k: {t: np/zlj, h: toggle}
 - p: [30, 29, 28]
   k: {t: '4', h: toggle}
 - p: [22, 29]
@@ -352,3 +352,5 @@ combos:
   k: {t: symb, h: toggle}
 - p: [60, 59]
   k: {t: wsps, h: toggle}
+- p: [59, 57]
+  k: {t: base, h: toggle}
