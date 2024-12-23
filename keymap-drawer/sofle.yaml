@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - CLCK
+  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '`', s: '~'}
   - A
   - S
@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - '&mkp MB4'
   - $$mdi:volume-off$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - LGUI
   - LGUI
