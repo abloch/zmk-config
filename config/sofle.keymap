@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -101,6 +104,7 @@
             label = "GUI_RAYCAST";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LG(D)>;
+
             tapping-term-ms = <150>;
         };
 
@@ -247,7 +251,7 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2    &kp N3    &kp N4    &kp N5         &kp UP     &kp N6       &kp N7   &kp N8     &kp N9     &kp N0     &backlock
-&kp TAB     &kp Q      &kp W     &kp E     &kp R     &kp T          &kp DOWN   &kp Y        &kp U    &kp I      &kp O      &kp P      &caps_lock_word
+&kp TAB     &kp Q      &kp W     &kp E     &kp R     &kp T          &kp DOWN   &kp Y        &kp U    &kp I      &kp O      &kp P      &kp CLCK
 &kp GRAVE   &kp A      &kp S     &kp D     &kp F     &kp G          &kp LEFT   &kp H        &kp J    &kp K      &kp L      &kp BSPC   &none
 &kp LCTRL   &kp Z      &kp X     &kp C     &kp V     &kp B          &kp RIGHT  &kp N        &kp M    &kp COMMA  &kp DOT    &kp SLASH  &mkp MB4
 &kp C_MUTE  &sk LSHFT  &sk LALT  &kp LGUI  &kp LGUI  &lt 1 SPACE    &kp RET    &lt 2 SPACE  &kp RET  &kp RET    &kp MINUS  &kp TILDE
