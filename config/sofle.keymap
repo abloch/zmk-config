@@ -303,6 +303,8 @@
 &kp LS(LG(Z))  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp END   &kp DEL         &kp PAGE_DOWN    &trans         &kp LA(MINUS)
 &trans         &trans  &trans  &trans  &trans  &kp LEFT_SHIFT    &trans          &trans  &trans    &trans          &trans           &trans
             >;
+
+            label = "arrows";
         };
     };
 };
