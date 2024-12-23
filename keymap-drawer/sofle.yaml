@@ -351,7 +351,7 @@ combos:
 - p: [60, 59]
   k: {t: wsps, h: toggle}
 - p: [34, 35, 29]
-  k: {t: '-', s: _}
+  k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 30]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 27]
