@@ -331,7 +331,7 @@ combos:
 - p: [51, 50]
   k: $$mdi:progress-download$$
 - p: [28, 16, 30]
-  k: np/zlj
+  k: {t: np/zlj, h: '$$mdi:gesture-tap-hold$$'}
 - p: [42, 30]
   k: {t: /, s: '?'}
 - p: [29, 43]
