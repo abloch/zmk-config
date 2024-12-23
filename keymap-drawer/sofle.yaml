@@ -335,7 +335,7 @@ combos:
 - p: [28, 30, 29]
   k: {t: np/zlj, h: toggle}
 - p: [28, 30, 16]
-  k: {t: arrows, h: toggle}
+  k: {t: np/zlj, h: toggle}
 - p: [42, 30]
   k: {t: /, s: '?'}
 - p: [29, 43]
