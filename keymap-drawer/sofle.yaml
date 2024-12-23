@@ -342,21 +342,21 @@ combos:
   k: {t: '-', s: _}
 - p: [43, 42]
   k: _
-- p: [22, 31]
+- p: [34, 18]
   k: $$mdi:pan-up$$
-- p: [35, 31]
+- p: [31, 34]
   k: $$mdi:pan-down$$
 - p: [56, 57]
   k: {t: symb, h: toggle}
 - p: [60, 59]
   k: {t: wsps, h: toggle}
-- p: [34, 35, 29]
+- p: [34, 41]
   k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
-- p: [34, 35, 30]
+- p: [34, 43]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
-- p: [34, 35, 27]
+- p: [34, 40]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 43]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-- p: [34, 35, 42]
+- p: [34, 35, 40]
   k: Gui+Sft+Z
