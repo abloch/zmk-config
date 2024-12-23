@@ -3,9 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -277,7 +274,7 @@
         layer_2 {
             bindings = <
 &to 0      &kp LS(N1)   &kp LS(N2)   &kp LS(N3)        &kp LS(N4)  &kp LS(N5)    &mmv MOVE_UP     &kp LS(N6)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)         &kp LS(N0)       &kp LG(LC(Q))
-&kp TAB    &kp LBRC     &kp RBRC     &colon_semicolon  &kp DQT     &kp SQT       &mmv MOVE_DOWN   &none              &kp HOME          &kp UP            &kp PG_UP          &kp F11          &kp F12
+&kp TAB    &kp LBRC     &kp RBRC     &colon_semicolon  &kp DQT     &kp SQT       &mmv MOVE_DOWN   &kp LA(N6)         &kp LA(N7)        &kp LA(N8)        &kp LA(N9)         &kp LA(N0)       &none
 &kp QMARK  &kp KP_LPAR  &kp KP_RPAR  &kp PLUS          &kp EXCL    &kp DOLLAR    &mmv MOVE_LEFT   &kp LA(LC(LG(T)))  &kp LA(LC(LEFT))  &sk LA(LC(LGUI))  &kp LC(LA(RIGHT))  &kp BACKSPACE    &none
 &kp LG(Z)  &kp LBKT     &kp RBKT     &kp EQUAL         &kp DOLLAR  &kp STAR      &mmv MOVE_RIGHT  &kp LA(N1)         &kp LA(N2)        &kp LA(N3)        &kp LA(N4)         &kp LA(N5)       &mkp MB5
 &kp C_PP   &kp LG(X)    &kp LG(C)    &kp LG(V)         &kp LG(V)   &kp SPACE     &mkp RCLK        &kp SPACE          &sk LEFT_SHIFT    &sk LEFT_SHIFT    &rgb_ug RGB_EFF    &rgb_ug RGB_TOG
