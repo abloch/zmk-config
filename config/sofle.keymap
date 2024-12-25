@@ -219,12 +219,12 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <42 30>;
+            key-positions = <29 17>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <29 43>;
+            key-positions = <16 30>;
         };
 
         minus {
