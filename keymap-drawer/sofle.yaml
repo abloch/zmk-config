@@ -375,4 +375,6 @@ combos:
 - p: [30, 22]
   k: '&unfold'
 - p: [47, 48, 49]
-  k: $$mdi:apple-keyboard-option$$
+  k: $$mdi:apple-keyboard-command$$
+- p: [47, 48, 49, 30]
+  k: Gui+$$mdi:keyboard-tab$$
