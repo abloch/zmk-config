@@ -348,11 +348,11 @@ combos:
   k: {t: symb, h: toggle}
 - p: [60, 59]
   k: {t: wsps, h: toggle}
-- p: [34, 41]
+- p: [34, 42]
   k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 43]
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
-- p: [34, 40]
+- p: [34, 41]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 40]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
