@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -258,7 +262,7 @@
         copy {
             bindings = <&kp LG(C)>;
             timeout-ms = <200>;
-            key-positions = <34 41>;
+            key-positions = <34 42>;
         };
 
         paste {
@@ -270,7 +274,7 @@
         cut {
             bindings = <&kp LG(X)>;
             timeout-ms = <200>;
-            key-positions = <34 40>;
+            key-positions = <34 41>;
         };
 
         undo {
