@@ -155,7 +155,7 @@ layers:
   - {t: Alt+7, s: Alt+&}
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '?'
   - (
