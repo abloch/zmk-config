@@ -183,6 +183,20 @@
 
             label = "TAB_RIGHT";
         };
+
+        unfold: unfold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K) &kp LG(LEFT_BRACKET)>;
+            label = "UNFOLD";
+        };
+
+        fold_all: fold_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K) &kp LG(N0)>;
+            label = "FOLD_ALL";
+        };
     };
 
     combos {
@@ -284,6 +298,36 @@
             bindings = <&kp SEMI>;
             key-positions = <31 18>;
         };
+
+        save {
+            bindings = <&kp LG(S)>;
+            key-positions = <34 28>;
+        };
+
+        find {
+            bindings = <&kp LG(F)>;
+            key-positions = <34 30>;
+        };
+
+        findall {
+            bindings = <&kp LG(LS(F))>;
+            key-positions = <34 30 35>;
+        };
+
+        select_all {
+            bindings = <&kp LG(LS(L))>;
+            key-positions = <34 35 36>;
+        };
+
+        foldall_combo {
+            bindings = <&fold_all>;
+            key-positions = <30 21>;
+        };
+
+        unfold_combo {
+            bindings = <&unfold>;
+            key-positions = <30 22>;
+        };
     };
 
     keymap {
@@ -295,7 +339,7 @@
 &kp TAB     &kp Q      &kp W     &kp E     &kp R        &kp T     &kp DOWN   &kp Y   &kp U        &kp I      &kp O    &kp P      &kt LSHFT
 &kp GRAVE   &kp A      &kp S     &kp D     &kp F        &kp G     &kp LEFT   &kp H   &kp J        &kp K      &kp L    &kp BSPC   &none
 &kp LCTRL   &kp Z      &kp X     &kp C     &kp V        &kp B     &kp RIGHT  &kp N   &kp M        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
-&kp C_MUTE  &kp LSHFT  &sk LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
+&kp C_MUTE  &kp LSHFT  &kp LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -304,11 +348,11 @@
 
         layer_1 {
             bindings = <
-&to 0         &kp F1    &kp F2    &kp F3     &kp F4      &kp F5       &mmv MOVE_UP     &kp F6  &kp F7     &kp F8          &kp F9     &kp F10     &kp LG(LC(Q))
-&kp TAB       &kp LBRC  &kp RBRC  &kp COLON  &kp DQT     &kp SQT      &mmv MOVE_DOWN   &none   &kp HOME   &kp UP          &kp PG_UP  &kp F11     &kp F12
-&kp QUESTION  &kp LPAR  &kp RPAR  &kp PLUS   &kp EXCL    &kp PIPE     &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN        &kp RIGHT  &kp BSPC    &none
-&kp LG(Z)     &kp LT    &kp GT    &kp EQUAL  &kp DOLLAR  &kp ASTRK    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL         &kp PG_DN  &none       &mkp MB5
-&kp C_PP      &trans    &trans    &trans     &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &sk LEFT_SHIFT  &tab_left  &tab_right
+&to 0         &kp F1          &kp F2        &kp F3        &kp F4      &kp F5       &mmv MOVE_UP     &kp F6  &kp F7     &kp F8          &kp F9     &kp F10     &kp LG(LC(Q))
+&kp TAB       &kp LBRC        &kp RBRC      &kp COLON     &kp DQT     &kp SQT      &mmv MOVE_DOWN   &none   &kp HOME   &kp UP          &kp PG_UP  &kp F11     &kp F12
+&kp QUESTION  &kp LPAR        &kp RPAR      &kp PLUS      &kp EXCL    &kp PIPE     &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN        &kp RIGHT  &kp BSPC    &none
+&kp LG(Z)     &kp LT          &kp GT        &kp EQUAL     &kp DOLLAR  &kp ASTRK    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL         &kp PG_DN  &none       &mkp MB5
+&kp C_PP      &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &sk LEFT_SHIFT  &tab_left  &tab_right
             >;
 
             display-name = "symb";
@@ -317,11 +361,11 @@
 
         layer_2 {
             bindings = <
-&to 0      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &mmv MOVE_UP     &kp LS(N6)       &kp LS(N7)        &kp LS(N8)          &kp LS(N9)        &kp LS(N0)        &kp LG(LC(Q))
-&kp TAB    &kp LBRC    &kp RBRC    &kp COLON   &kp DQT     &kp SQT       &mmv MOVE_DOWN   &kp LA(LS(TAB))  &kp LA(N7)        &kp LA(N8)          &kp LA(N9)        &none             &none
-&kp QMARK  &kp LPAR    &kp RPAR    &kp PLUS    &kp EXCL    &kp PIPE      &mmv MOVE_LEFT   &kp LA(TAB)      &kp LA(NUMBER_4)  &kp LA(N5)          &kp LA(NUMBER_6)  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
-&kp LG(Z)  &kp LBKT    &kp RBKT    &kp EQUAL   &kp DOLLAR  &kp STAR      &mmv MOVE_RIGHT  &none            &kp LA(N1)        &kp LA(NUMBER_2)    &kp LA(NUMBER_3)  &none             &mkp MB5
-&kp C_PP   &trans      &trans      &trans      &kp SPACE   &none         &mkp RCLK        &none            &kp SPACE         &kp LA(LEFT_SHIFT)  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
+&to 0      &kp LS(N1)      &kp LS(N2)    &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &mmv MOVE_UP     &kp LS(N6)       &kp LS(N7)        &kp LS(N8)          &kp LS(N9)        &kp LS(N0)        &kp LG(LC(Q))
+&kp TAB    &kp LBRC        &kp RBRC      &kp COLON   &kp DQT     &kp SQT       &mmv MOVE_DOWN   &kp LA(LS(TAB))  &kp LA(N7)        &kp LA(N8)          &kp LA(N9)        &none             &none
+&kp QMARK  &kp LPAR        &kp RPAR      &kp PLUS    &kp EXCL    &kp PIPE      &mmv MOVE_LEFT   &kp LA(TAB)      &kp LA(NUMBER_4)  &kp LA(N5)          &kp LA(NUMBER_6)  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
+&kp LG(Z)  &kp LBKT        &kp RBKT      &kp EQUAL   &kp DOLLAR  &kp STAR      &mmv MOVE_RIGHT  &none            &kp LA(N1)        &kp LA(NUMBER_2)    &kp LA(NUMBER_3)  &none             &mkp MB5
+&kp C_PP   &kt LEFT_SHIFT  &kt LEFT_ALT  &kp LG(D)   &kp SPACE   &none         &mkp RCLK        &none            &kp SPACE         &kp LA(LEFT_SHIFT)  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
             >;
 
             display-name = "wsps";
