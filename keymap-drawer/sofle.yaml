@@ -374,3 +374,5 @@ combos:
   k: '&fold_all'
 - p: [30, 22]
   k: '&unfold'
+- p: [47, 48, 49]
+  k: $$mdi:apple-keyboard-option$$
