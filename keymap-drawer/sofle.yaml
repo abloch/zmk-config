@@ -82,7 +82,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ;, h: ':', s: ':'}
+  - ':'
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -147,7 +147,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - '{'
   - '}'
-  - {t: ;, h: ':', s: ':'}
+  - ':'
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -354,7 +354,11 @@ combos:
   k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 40]
   k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
-- p: [34, 35, 43]
+- p: [34, 40]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
 - p: [34, 35, 40]
   k: Gui+Sft+Z
+- p: [44, 31]
+  k: '|'
+- p: [31, 18]
+  k: {t: ;, s: ':'}
