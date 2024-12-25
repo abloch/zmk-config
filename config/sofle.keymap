@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -325,9 +329,14 @@
             key-positions = <30 22>;
         };
 
-        alt {
-            bindings = <&kp LEFT_ALT>;
+        gui {
+            bindings = <&kp LEFT_GUI>;
             key-positions = <47 48 49>;
+        };
+
+        alttab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <47 48 49 30>;
         };
     };
 
