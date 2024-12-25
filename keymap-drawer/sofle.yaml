@@ -192,7 +192,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', type: held}
-  - Alt+$$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-shift$$
   - RGB EFF
   - RGB TOG
   np/zlj:
