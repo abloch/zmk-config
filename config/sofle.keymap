@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -362,6 +366,61 @@
         question_mark {
             bindings = <&kp QUESTION>;
             key-positions = <43 29>;
+        };
+
+        vscode {
+            bindings = <&kp LA(LC(LG(C)))>;
+            key-positions = <35 42>;
+        };
+
+        slack {
+            bindings = <&kp LA(LC(LG(S)))>;
+            key-positions = <35 28>;
+        };
+
+        arc1 {
+            bindings = <&arc1>;
+            key-positions = <35 1>;
+        };
+
+        arc2 {
+            bindings = <&arc2>;
+            key-positions = <35 2>;
+        };
+
+        arc {
+            bindings = <&kp LA(LC(LG(A)))>;
+            key-positions = <35 27>;
+        };
+
+        rambox {
+            bindings = <&kp LA(LC(LG(R)))>;
+            key-positions = <35 17>;
+        };
+
+        obsidian {
+            bindings = <&kp LA(LC(LG(O)))>;
+            key-positions = <35 23>;
+        };
+
+        bruno {
+            bindings = <&kp LA(LC(LG(B)))>;
+            key-positions = <35 23>;
+        };
+
+        spotify {
+            bindings = <&kp LA(LC(LG(M)))>;
+            key-positions = <35 47>;
+        };
+
+        zoom {
+            bindings = <&kp LA(LC(LG(Z)))>;
+            key-positions = <35 40>;
+        };
+
+        raycast_paste {
+            bindings = <&kp LA(LC(LG(V)))>;
+            key-positions = <35 43>;
         };
     };
 
