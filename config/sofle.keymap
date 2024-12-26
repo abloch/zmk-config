@@ -12,6 +12,7 @@
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 &sk { release-after-ms = <5000>; };
 
@@ -40,6 +41,15 @@
             acceleration-exponent = <1>;      // 0
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   //   10
+        };
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
 
         hm: homerow_mods {
@@ -237,7 +247,7 @@
             bindings = <&msc SCRL_UP>;
             timeout-ms = <200>;
             key-positions = <34 18>;
-        };
+        }; 
 
         scrolldown {
             bindings = <&msc SCRL_DOWN>;
@@ -342,9 +352,9 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2    &kp N3    &kp N4       &kp N5    &kp UP     &kp N6  &kp N7       &kp N8     &kp N9   &kp N0     &backlock
-&kp TAB     &kp Q      &kp W     &kp E     &kp R        &kp T     &kp DOWN   &kp Y   &kp U        &kp I      &kp O    &kp P      &kt LSHFT
-&kp GRAVE   &kp A      &kp S     &kp D     &kp F        &kp G     &kp LEFT   &kp H   &kp J        &kp K      &kp L    &kp BSPC   &none
-&kp LCTRL   &kp Z      &kp X     &kp C     &kp V        &kp B     &kp RIGHT  &kp N   &kp M        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
+&kp TAB     AS(Q)      AS(W)     AS(E)     AS(R)        AS(T)     &kp DOWN   AS(Y)   AS(U)        AS(I)      AS(O)    AS(P)      &kt LSHFT
+&kp GRAVE   AS(A)      AS(S)     AS(D)     AS(F)        AS(G)     &kp LEFT   AS(H)   AS(J)        AS(K)      AS(L)    BSPC       &none
+&kp LCTRL   AS(Z)      AS(X)     AS(C)     AS(V)        AS(B)     &kp RIGHT  AS(N)   AS(M)        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
 &kp C_MUTE  &kp LSHFT  &kp LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
             >;
 
