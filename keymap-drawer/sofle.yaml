@@ -15,40 +15,40 @@ layers:
   - {t: '0', s: )}
   - '&backlock'
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - '&as Q'
+  - '&as W'
+  - '&as E'
+  - '&as R'
+  - '&as T'
   - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - '&as Y'
+  - '&as U'
+  - '&as I'
+  - '&as O'
+  - '&as P'
   - {t: '$$mdi:apple-keyboard-shift$$', h: toggle}
   - {t: '`', s: '~'}
-  - A
-  - S
-  - D
-  - F
-  - G
+  - '&as A'
+  - '&as S'
+  - '&as D'
+  - '&as F'
+  - '&as G'
   - $$mdi:arrow-left-bold$$
-  - H
-  - J
-  - K
-  - L
+  - '&as H'
+  - '&as J'
+  - '&as K'
+  - '&as L'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - '&as Z'
+  - '&as X'
+  - '&as C'
+  - '&as V'
+  - '&as B'
   - $$mdi:arrow-right-bold$$
-  - N
-  - M
+  - '&as N'
+  - '&as M'
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
