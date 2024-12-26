@@ -400,3 +400,5 @@ combos:
   k: Alt+Ctl+Gui+Z
 - p: [35, 43]
   k: Alt+Ctl+Gui+V
+- p: [34, 37]
+  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
