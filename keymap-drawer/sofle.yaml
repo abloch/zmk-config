@@ -151,7 +151,7 @@ layers:
   - '"'
   - {t: '''', s: '"'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Alt+Sft+$$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Alt+7, s: Alt+&}
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
@@ -164,7 +164,7 @@ layers:
   - '!'
   - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - Alt+$$mdi:keyboard-tab$$
+  - Alt+Ctl+Gui+T
   - Alt+4
   - {t: Alt+5, s: Alt+%}
   - Alt+6
@@ -374,7 +374,7 @@ combos:
   k: '&fold_all'
 - p: [30, 22]
   k: '&unfold'
-- p: [47, 48, 49]
+- p: [47, 49]
   k: $$mdi:apple-keyboard-command$$
-- p: [47, 48, 49, 30]
-  k: Gui+$$mdi:keyboard-tab$$
+- p: [43, 29]
+  k: '?'
