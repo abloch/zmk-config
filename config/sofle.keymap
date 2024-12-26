@@ -35,6 +35,7 @@
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <750>;
+            require-prior-idle-ms = <325>;
             bindings = <&shifted>, <&kp>;
         };
 
