@@ -928,6 +928,12 @@ rect.held, rect.combo.held {
 <tspan x="490" dy="-0.6em" style="font-size: 67%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 67%">Ctl+Gui+V</tspan>
 </text>
 </g>
+<g class="combo backspace combopos-37">
+<path d="M756,158 l-65,-8" class="combo"/>
+<path d="M756,158 l65,8" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="747" y="149" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-symb">
@@ -1513,6 +1519,12 @@ rect.held, rect.combo.held {
 <text x="490" y="172" class="combo tap">
 <tspan x="490" dy="-0.6em" style="font-size: 67%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 67%">Ctl+Gui+V</tspan>
 </text>
+</g>
+<g class="combo backspace combopos-37">
+<path d="M756,158 l-65,-8" class="combo"/>
+<path d="M756,158 l65,8" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="747" y="149" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
 </g>
 </g>
@@ -2118,6 +2130,12 @@ rect.held, rect.combo.held {
 <tspan x="490" dy="-0.6em" style="font-size: 67%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 67%">Ctl+Gui+V</tspan>
 </text>
 </g>
+<g class="combo backspace combopos-37">
+<path d="M756,158 l-65,-8" class="combo"/>
+<path d="M756,158 l65,8" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="747" y="149" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-np/zlj">
@@ -2697,6 +2715,12 @@ rect.held, rect.combo.held {
 <tspan x="490" dy="-0.6em" style="font-size: 67%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 67%">Ctl+Gui+V</tspan>
 </text>
 </g>
+<g class="combo backspace combopos-37">
+<path d="M756,158 l-65,-8" class="combo"/>
+<path d="M756,158 l65,8" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="747" y="149" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-arrows">
@@ -3269,6 +3293,12 @@ rect.held, rect.combo.held {
 <text x="490" y="172" class="combo tap">
 <tspan x="490" dy="-0.6em" style="font-size: 67%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 67%">Ctl+Gui+V</tspan>
 </text>
+</g>
+<g class="combo backspace combopos-37">
+<path d="M756,158 l-65,-8" class="combo"/>
+<path d="M756,158 l65,8" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="747" y="149" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
 </g>
 </g>
