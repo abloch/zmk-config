@@ -378,3 +378,25 @@ combos:
   k: $$mdi:apple-keyboard-command$$
 - p: [43, 29]
   k: '?'
+- p: [35, 42]
+  k: Alt+Ctl+Gui+C
+- p: [35, 28]
+  k: Alt+Ctl+Gui+S
+- p: [35, 1]
+  k: '&arc1'
+- p: [35, 2]
+  k: '&arc2'
+- p: [35, 27]
+  k: Alt+Ctl+Gui+A
+- p: [35, 17]
+  k: Alt+Ctl+Gui+R
+- p: [35, 23]
+  k: Alt+Ctl+Gui+O
+- p: [35, 23]
+  k: Alt+Ctl+Gui+B
+- p: [35, 47]
+  k: Alt+Ctl+Gui+M
+- p: [35, 40]
+  k: Alt+Ctl+Gui+Z
+- p: [35, 43]
+  k: Alt+Ctl+Gui+V
