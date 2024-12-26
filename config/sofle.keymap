@@ -116,15 +116,7 @@
             label = "GUI_RAYCAST";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LG(D)>;
-
             tapping-term-ms = <150>;
-        };
-
-        colon_semicolon: colon_semicolon {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COLON_SEMICOLON";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
         };
 
         caps_lock_word: caps_lock_word {
