@@ -3,6 +3,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -417,6 +421,11 @@
         raycast_paste {
             bindings = <&kp LA(LC(LG(V)))>;
             key-positions = <35 43>;
+        };
+
+        alt_backspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <34 37>;
         };
     };
 
