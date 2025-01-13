@@ -396,9 +396,11 @@ combos:
   k: Alt+Ctl+Gui+B
 - p: [35, 47]
   k: Alt+Ctl+Gui+M
-- p: [35, 40]
+- p: [35, 40, 36]
   k: '&zz_macro'
 - p: [35, 43]
   k: Alt+Ctl+Gui+V
 - p: [34, 37]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
+- p: [35, 36, 14]
+  k: '&qexit'
