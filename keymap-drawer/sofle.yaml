@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   base:
   - $$mdi:keyboard-esc$$
@@ -396,8 +396,6 @@ combos:
   k: Alt+Ctl+Gui+B
 - p: [35, 47]
   k: Alt+Ctl+Gui+M
-- p: [35, 40, 36]
-  k: '&zz_macro'
 - p: [35, 43]
   k: Alt+Ctl+Gui+V
 - p: [34, 37]
