@@ -30,6 +30,17 @@
 
 / {
     behaviors {
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <450>;
+            require-prior-idle-ms = <325>;
+            bindings = <&shifted>, <&kp>;
+
+            flavor = "tap-preferred";
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -410,6 +421,11 @@
         spotify {
             bindings = <&kp LA(LC(LG(M)))>;
             key-positions = <35 47>;
+        };
+
+        zz {
+            bindings = <&zz_macro>;
+            key-positions = <35 40 36>;
         };
 
         raycast_paste {
