@@ -454,7 +454,7 @@
         };
 
         to_layer_4 {
-            bindings = <&to 4>;
+            bindings = <&mo 4>;
             key-positions = <56 60>;
         };
     };
