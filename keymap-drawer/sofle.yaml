@@ -339,3 +339,7 @@ combos:
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
 - p: [35, 36, 14]
   k: '&qexit'
+- p: [0, 2, 4]
+  k: BT CLR ALL
+- p: [0, 2, 1]
+  k: {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
