@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -441,6 +442,16 @@
         qexit_macro {
             bindings = <&qexit>;
             key-positions = <35 36 14>;
+        };
+
+        bluetooth_cleatall {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 2 4>;
+        };
+
+        bluetooth_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <0 2 1>;
         };
     };
 
