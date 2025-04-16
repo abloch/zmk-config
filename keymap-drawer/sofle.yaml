@@ -331,7 +331,7 @@ combos:
 - p: [28, 30, 29]
   k: np/zlj
 - p: [28, 30, 16]
-  k: {t: base, h: toggle}
+  k: {t: func_num, h: toggle}
 - p: [29, 17]
   k: {t: /, s: '?'}
 - p: [16, 30]
