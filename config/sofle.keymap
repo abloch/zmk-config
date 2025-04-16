@@ -135,13 +135,6 @@
             #binding-cells = <0>;
             bindings = <&none>, <&none>, <&bootloader>;
         };
-
-        td5: td5 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD5";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp TAB>, <&sl 5>;
-        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -203,6 +196,31 @@
             #binding-cells = <0>;
             bindings = <&kp LG(K) &kp LG(N0)>;
             label = "FOLD_ALL";
+        };
+
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
+
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
 
         zz_macro: zz_macro {
@@ -335,14 +353,74 @@
             key-positions = <34 30 35>;
         };
 
+        select_all {
+            bindings = <&kp LG(LS(L))>;
+            key-positions = <34 35 36>;
+        };
+
+        foldall_combo {
+            bindings = <&fold_all>;
+            key-positions = <30 21>;
+        };
+
+        unfold_combo {
+            bindings = <&unfold>;
+            key-positions = <30 22>;
+        };
+
         gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <47 49>;
         };
 
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <43 29>;
+        };
+
+        vscode {
+            bindings = <&kp LA(LC(LG(C)))>;
+            key-positions = <35 42>;
+        };
+
+        slack {
+            bindings = <&kp LA(LC(LG(S)))>;
+            key-positions = <35 28>;
+        };
+
+        arc1 {
+            bindings = <&arc1>;
+            key-positions = <35 1>;
+        };
+
+        arc2 {
+            bindings = <&arc2>;
+            key-positions = <35 2>;
+        };
+
+        arc {
+            bindings = <&kp LA(LC(LG(A)))>;
+            key-positions = <35 27>;
+        };
+
         rambox {
             bindings = <&kp LA(LC(LG(R)))>;
             key-positions = <35 17>;
+        };
+
+        obsidian {
+            bindings = <&kp LA(LC(LG(O)))>;
+            key-positions = <35 23>;
+        };
+
+        bruno {
+            bindings = <&kp LA(LC(LG(B)))>;
+            key-positions = <35 23>;
+        };
+
+        spotify {
+            bindings = <&kp LA(LC(LG(M)))>;
+            key-positions = <35 47>;
         };
 
         zz {
@@ -354,6 +432,16 @@
             bindings = <&kp LA(LC(LG(V)))>;
             key-positions = <35 43>;
         };
+
+        alt_backspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <34 37>;
+        };
+
+        qexit_macro {
+            bindings = <&qexit>;
+            key-positions = <35 36 14>;
+        };
     };
 
     keymap {
@@ -362,10 +450,10 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2    &kp N3    &kp N4       &kp N5    &kp UP     &kp N6  &kp N7       &kp N8     &kp N9   &kp N0     &backlock
-&td5        &as Q      &as W     &as E     &as R        &as T     &kp DOWN   &as Y   &as U        &as I      &as O    &as P      &kt LSHFT
+&kp TAB     &as Q      &as W     &as E     &as R        &as T     &kp DOWN   &as Y   &as U        &as I      &as O    &as P      &kt LSHFT
 &kp GRAVE   &as A      &as S     &as D     &as F        &as G     &kp LEFT   &as H   &as J        &as K      &as L    &kp BSPC   &none
 &kp LCTRL   &as Z      &as X     &as C     &as V        &as B     &kp RIGHT  &as N   &as M        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
-&kp C_MUTE  &sk LSHFT  &sk LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
+&kp C_MUTE  &kp LSHFT  &kp LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -374,11 +462,11 @@
 
         layer_1 {
             bindings = <
-&to 0         &kp F1          &kp F2        &kp F3        &kp F4      &kp F5       &mmv MOVE_UP     &kp F6  &kp F7     &kp F8    &kp F9     &kp F10   &kp LG(LC(Q))
-&kp TAB       &kp LBRC        &kp RBRC      &kp COLON     &kp DQT     &kp SQT      &mmv MOVE_DOWN   &none   &kp HOME   &kp UP    &kp PG_UP  &kp F11   &kp F12
-&kp QUESTION  &kp LPAR        &kp RPAR      &kp PLUS      &kp EXCL    &kp PIPE     &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN  &kp RIGHT  &kp BSPC  &none
-&kp LG(Z)     &kp LT          &kp GT        &kp EQUAL     &kp DOLLAR  &kp ASTRK    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL   &kp PG_DN  &none     &mkp MB5
-&kp C_PP      &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &none     &none      &none
+&to 0         &kp F1          &kp F2        &kp F3        &kp F4      &kp F5       &mmv MOVE_UP     &kp F6  &kp F7     &kp F8          &kp F9     &kp F10     &kp LG(LC(Q))
+&kp TAB       &kp LBRC        &kp RBRC      &kp COLON     &kp DQT     &kp SQT      &mmv MOVE_DOWN   &none   &kp HOME   &kp UP          &kp PG_UP  &kp F11     &kp F12
+&kp QUESTION  &kp LPAR        &kp RPAR      &kp PLUS      &kp EXCL    &kp PIPE     &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN        &kp RIGHT  &kp BSPC    &none
+&kp LG(Z)     &kp LT          &kp GT        &kp EQUAL     &kp DOLLAR  &kp ASTRK    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL         &kp PG_DN  &none       &mkp MB5
+&kp C_PP      &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &sk LEFT_SHIFT  &tab_left  &tab_right
             >;
 
             display-name = "symb";
@@ -391,7 +479,7 @@
 &kp TAB    &kp LBRC        &kp RBRC      &kp COLON   &kp DQT     &kp SQT       &mmv MOVE_DOWN   &none              &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &bootloader       &none
 &kp QMARK  &kp LPAR        &kp RPAR      &kp PLUS    &kp EXCL    &kp PIPE      &mmv MOVE_LEFT   &kp LA(LC(LG(T)))  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_6)  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
 &kp LG(Z)  &kp LBKT        &kp RBKT      &kp EQUAL   &kp DOLLAR  &kp STAR      &mmv MOVE_RIGHT  &none              &kp LA(N1)        &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &none             &mkp MB5
-&kp C_PP   &kp LEFT_SHIFT  &kt LEFT_ALT  &kp LG(D)   &kp SPACE   &none         &mkp RCLK        &none              &kp SPACE         &kp LEFT_SHIFT    &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
+&kp C_PP   &kt LEFT_SHIFT  &kt LEFT_ALT  &kp LG(D)   &kp SPACE   &none         &mkp RCLK        &none              &kp SPACE         &kp LEFT_SHIFT    &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
             >;
 
             display-name = "wsps";
@@ -400,11 +488,11 @@
 
         np_zlj {
             bindings = <
-&to 0   &none      &none   &none   &none      &none        &none  &none  &none      &none   &none         &none          &none
-&none   &none      &none   &none   &none      &kp LA(T)    &none  &none  &kp N7     &kp N8  &kp N9        &kp LA(P)      &bt BT_NXT
-&none   &kp LSHFT  &none   &none   &none      &none        &none  &none  &kp N4     &kp N5  &kp N6        &kp LA(UP)     &kp LA(EQUAL)
-&trans  &none      &none   &none   &none      &none        &none  &none  &kp N1     &kp N2  &kp N3        &kp LA(DOWN)   &kp LA(MINUS)
-&none   &trans     &trans  &trans  &kp SPACE  &none        &none  &none  &kp SPACE  &kp N0  &kp LA(LEFT)  &kp LA(RIGHT)
+&to 0   &none   &none   &none   &none      &none        &none  &none  &none      &none   &none         &none          &none
+&none   &none   &none   &none   &none      &kp LA(T)    &none  &none  &kp N7     &kp N8  &kp N9        &kp LA(P)      &bt BT_NXT
+&none   &none   &none   &none   &none      &none        &none  &none  &kp N4     &kp N5  &kp N6        &kp LA(UP)     &kp LA(EQUAL)
+&trans  &none   &none   &none   &none      &none        &none  &none  &kp N1     &kp N2  &kp N3        &kp LA(DOWN)   &kp LA(MINUS)
+&none   &trans  &trans  &trans  &kp SPACE  &none        &none  &none  &kp SPACE  &kp N0  &kp LA(LEFT)  &kp LA(RIGHT)
             >;
 
             label = "np/zlj";
@@ -420,16 +508,6 @@
             >;
 
             label = "arrows";
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5         &trans  &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &trans
-&trans  &trans           &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
-            >;
         };
     };
 };
