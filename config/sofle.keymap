@@ -450,9 +450,9 @@
         layer0 {
             bindings = <
 &kp ESC     &kp N1     &kp N2    &kp N3    &kp N4       &kp N5    &kp UP     &kp N6  &kp N7       &kp N8     &kp N9   &kp N0     &backlock
-&kp TAB     &as Q      &as W     &as E     &as R        &as T     &kp DOWN   &as Y   &as U        &as I      &as O    &as P      &kt LSHFT
-&kp GRAVE   &as A      &as S     &as D     &as F        &as G     &kp LEFT   &as H   &as J        &as K      &as L    &kp BSPC   &none
-&kp LCTRL   &as Z      &as X     &as C     &as V        &as B     &kp RIGHT  &as N   &as M        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
+&kp TAB     &as kp Q      &as kp W     &as kp E     &as kp R        &as kp T     &kp DOWN   &as kp Y   &as kp U        &as kp I      &as kp O    &as kp P      &kt LSHFT
+&kp GRAVE   &as kp A      &as kp S     &as kp D     &as kp F        &as kp G     &kp LEFT   &as kp H   &as kp J        &as kp K      &as kp L    &kp BSPC   &none
+&kp LCTRL   &as kp Z      &as kp X     &as kp C     &as kp V        &as kp B     &kp RIGHT  &as kp N   &as kp M        &kp COMMA  &kp DOT  &kp SLASH  &mkp MB4
 &kp C_MUTE  &kp LSHFT  &kp LALT  &kp LGUI  &lt 1 SPACE  &none     &kp RET    &none   &lt 2 SPACE  &kp RET    &none    &kp TILDE
             >;
 
@@ -466,7 +466,7 @@
 &kp TAB       &kp LBRC        &kp RBRC      &kp COLON     &kp DQT     &kp SQT      &mmv MOVE_DOWN   &none   &kp HOME   &kp UP          &kp PG_UP  &kp F11     &kp F12
 &kp QUESTION  &kp LPAR        &kp RPAR      &kp PLUS      &kp EXCL    &kp PIPE     &mmv MOVE_LEFT   &none   &kp LEFT   &kp DOWN        &kp RIGHT  &kp BSPC    &none
 &kp LG(Z)     &kp LT          &kp GT        &kp EQUAL     &kp DOLLAR  &kp ASTRK    &mmv MOVE_RIGHT  &none   &kp END    &kp DEL         &kp PG_DN  &none       &mkp MB5
-&kp C_PP      &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &sk LEFT_SHIFT  &tab_left  &tab_right
+&kp C_PP      &trans          &trans        &sk LEFT_GUI  &kp SPACE   &none        &mkp LCLK        &none   &kp SPACE  &sk LEFT_SHIFT  &tab_left  &tab_right
             >;
 
             display-name = "symb";
