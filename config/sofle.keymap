@@ -253,7 +253,7 @@
         };
 
         tolayer4 {
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
             key-positions = <28 30 16>;
         };
 
@@ -497,18 +497,6 @@
             >;
 
             label = "np/zlj";
-        };
-
-        layer_4 {
-            bindings = <
-&to 0   &trans  &trans  &trans  &trans          &trans       &msc SCRL_UP    &trans  &trans    &trans          &trans           &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &kp LA(T)    &msc SCRL_DOWN  &trans  &kp HOME  &kp UP_ARROW    &kp PG_UP        &kp LA(P)      &trans
-&trans  &trans  &trans  &trans  &msc SCRL_UP    &trans       &trans          &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(L))  &kp LA(EQUAL)
-&trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans       &trans          &trans  &kp END   &kp DEL         &kp PAGE_DOWN    &trans         &kp LA(MINUS)
-&trans  &trans  &trans  &trans  &trans          &none        &trans          &none   &trans    &trans          &trans           &trans
-            >;
-
-            label = "arrows";
         };
     };
 };
