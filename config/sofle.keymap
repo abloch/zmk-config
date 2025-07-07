@@ -202,7 +202,7 @@
 &to 0           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &none             &none            &mmv MOVE_DOWN   &foldall   &kp HOME        &kp UP    &kp PG_UP  &none              &kp LC(TAB)
 &kp ESC         &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5) &mmv MOVE_LEFT   &fold      &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LA(BACKSPACE)  &kp RBRC
 &none           &none             &none             &none             &none             &none            &mmv MOVE_RIGHT  &expand    &kp END         &kp DEL   &kp PG_DN  &kp LC(DEL)        &kp LC(GRAVE)
-&none           &none             &none             &kp LEFT_GUI      &to 3             &kp LSHFT        &mkp LCLK        &kp LCTRL  &to 2          &kp LALT  &none      &none
+&none           &none             &none             &kp LEFT_GUI      &to 3             &kp LSHFT        &mkp LCLK        &kp LCTRL  &tog 2          &kp LALT  &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
