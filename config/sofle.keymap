@@ -186,11 +186,11 @@
 
         wp_sym {
             bindings = <
-&bootloader  &none      &none            &none              &none             &none             &mmv MOVE_UP     &none      &none             &none             &none             &none                   &rgb_ug RGB_TOG
-&to 0        &braces    &kp SEMI         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET         &mmv MOVE_DOWN   &none      &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &arc1                   &arc2
-&trans       &parent    &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK         &mmv MOVE_LEFT   &term      &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(LC(LEFT))        &kp LC(LA(RIGHT))
-&trans       &brackets  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp COLON         &mmv MOVE_RIGHT  &none      &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))
-&kp C_MUTE   &none      &none            &kp LEFT_GUI       &to 3             &kp LEFT_SHIFT    &mkp LCLK        &kp LCTRL  &kp RET           &kp LEFT_ALT      &none             &none
+&bootloader   &none      &none            &none              &none             &none             &mmv MOVE_UP     &none      &none             &none             &none             &none                   &rgb_ug RGB_TOG
+&to 0         &braces    &kp SEMI         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET         &mmv MOVE_DOWN   &none      &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &arc1                   &arc2
+&kp ESC       &parent    &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK         &mmv MOVE_LEFT   &term      &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(LC(LEFT))        &kp LC(LA(RIGHT))
+&kp QUESTION  &brackets  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp COLON         &mmv MOVE_RIGHT  &none      &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))
+&kp C_MUTE    &none      &none            &kp LEFT_GUI       &to 3             &kp LEFT_SHIFT    &mkp LCLK        &kp LCTRL  &kp RET           &kp LEFT_ALT      &none             &none
             >;
 
             display-name = "wp_sym";
@@ -199,11 +199,11 @@
 
         nav {
             bindings = <
-&bt BT_CLR  &none             &none             &none             &none             &none               &mmv MOVE_UP     &none     &none           &none     &none      &none              &trans
-&to 0       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans            &trans              &mmv MOVE_DOWN   &foldall  &kp HOME        &kp UP    &kp PG_UP  &none              &kp LC(TAB)
-&kp ESC     &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &mmv MOVE_LEFT   &fold     &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LA(BACKSPACE)  &kp RBRC
-&trans      &none             &none             &none             &none             &none               &mmv MOVE_RIGHT  &expand   &kp END         &kp DEL   &kp PG_DN  &kp LC(DEL)        &kp LC(GRAVE)
-&trans      &trans            &trans            &trans            &to 0             &trans              &mkp LCLK        &trans    &tog 2          &trans    &trans     &trans
+&bt BT_CLR  &none             &none             &none             &none             &none               &mmv MOVE_UP     &none      &none           &none     &none      &none              &trans
+&to 0       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &none             &none               &mmv MOVE_DOWN   &foldall   &kp HOME        &kp UP    &kp PG_UP  &none              &kp LC(TAB)
+&kp ESC     &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &mmv MOVE_LEFT   &fold      &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LA(BACKSPACE)  &kp RBRC
+&trans      &none             &none             &none             &none             &none               &mmv MOVE_RIGHT  &expand    &kp END         &kp DEL   &kp PG_DN  &kp LC(DEL)        &kp LC(GRAVE)
+&trans      &trans            &none             &kp LEFT_GUI      &to 0             &kp LSHFT           &mkp LCLK        &kp LCTRL  &tog 2          &kp LALT  &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -211,11 +211,11 @@
 
         num {
             bindings = <
-&bootloader  &none   &none   &none   &none   &none    &mmv MOVE_UP     &none      &none         &none   &none   &none  &bootloader
-&to 0        &none   &none   &none   &none   &none    &mmv MOVE_DOWN   &kp ASTRK  &kp N7        &kp N8  &kp N9  &none  &none
-&none        &none   &none   &none   &none   &none    &mmv MOVE_LEFT   &kp PLUS   &kp N4        &kp N5  &kp N6  &none  &none
-&none        &none   &none   &none   &none   &none    &mmv MOVE_RIGHT  &kp MINUS  &kp N1        &kp N2  &kp N3  &none  &none
-&trans       &trans  &trans  &trans  &trans  &none    &mkp LCLK        &kp DOT    &kp NUMBER_0  &none   &none   &none
+&bootloader  &none   &none   &none   &none   &none     &mmv MOVE_UP     &none      &none         &none   &none   &none  &bootloader
+&to 0        &none   &none   &none   &none   &none     &mmv MOVE_DOWN   &kp ASTRK  &kp N7        &kp N8  &kp N9  &none  &none
+&none        &none   &none   &none   &none   &none     &mmv MOVE_LEFT   &kp PLUS   &kp N4        &kp N5  &kp N6  &none  &none
+&none        &none   &none   &none   &none   &none     &mmv MOVE_RIGHT  &kp MINUS  &kp N1        &kp N2  &kp N3  &none  &none
+&trans       &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &kp DOT    &kp NUMBER_0  &none   &none   &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -223,11 +223,11 @@
 
         fn {
             bindings = <
-&rgb_ug RGB_TOG  &none      &none      &none      &none              &none            &mmv MOVE_UP     &none    &none         &none         &none          &none  &bootloader
-&to 0            &exitvi    &kp F2     &kp F12    &none              &none            &mmv MOVE_DOWN   &none    &none         &none         &none          &none  &none
-&none            &none      &none      &none      &kp LG(F)          &kp LG(LS(F))    &mmv MOVE_LEFT   &none    &bt BT_SEL 3  &bt BT_SEL 4  &kp LS(LG(L))  &none  &none
-&none            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LA(LC(LG(V)))  &none            &mmv MOVE_RIGHT  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none  &none
-&trans           &trans     &trans     &trans     &trans             &trans           &mkp LCLK        &kp DOT  &none         &none         &none
+&rgb_ug RGB_TOG  &none      &none      &none      &none              &none            &mmv MOVE_UP     &none  &none         &none         &none          &none  &bootloader
+&to 0            &exitvi    &kp F2     &kp F12    &none              &none            &mmv MOVE_DOWN   &none  &none         &none         &none          &none  &none
+&none            &none      &none      &none      &kp LG(F)          &kp LG(LS(F))    &mmv MOVE_LEFT   &none  &bt BT_SEL 3  &bt BT_SEL 4  &kp LS(LG(L))  &none  &none
+&none            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LA(LC(LG(V)))  &none            &mmv MOVE_RIGHT  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none  &none
+&trans           &trans     &trans     &trans     &trans             &trans           &mkp LCLK        &none  &none         &none         &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
