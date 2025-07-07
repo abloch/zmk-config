@@ -7,12 +7,12 @@
 
 &msc {
     acceleration-exponent = <2>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
+    time-to-max-speed-ms = <1500>;       // 300
     delay-ms = <0>;                   // 0
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <1500>;
     acceleration-exponent = <2>;
     trigger-period-ms = <16>;
 };
