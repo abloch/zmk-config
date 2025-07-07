@@ -7,14 +7,14 @@
 
 
 &msc {
-    acceleration-exponent = <1>;      // 0
+    acceleration-exponent = <1.3>;      // 0
     time-to-max-speed-ms = <100>;       // 300
     delay-ms = <0>;                   // 0
 };
 
 &mmv {
     time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <1.3>;
     trigger-period-ms = <16>;
 };
 
@@ -173,11 +173,11 @@
 
         base {
             bindings = <
-&bootloader        &none  &none         &none        &none           &none    &kp UP_ARROW     &none  &none      &none        &none         &none          &bootloader
-&kp TAB            &kp Q  &kp W         &kp E        &kp R           &kp T    &kp DOWN_ARROW   &kp Y  &kp U      &kp I        &kp O         &kp P          &kp BSLH
-&kp ESCAPE         &kp A  &kp S         &kp D        &kp F           &kp G    &kp LEFT_ARROW   &kp H  &kp J      &kp K        &kp L         &kp BACKSPACE  &mkp MB4
-&kp GRAVE          &kp Z  &kp X         &kp C        &kp V           &kp B    &kp RIGHT_ARROW  &kp N  &kp M      &kp COMMA    &kp DOT       &kp FSLH       &kp TILDE
-&kp LC(LA(LG(M)))  &none  &kp LEFT_GUI  &lt 2 SPACE  &kp LEFT_SHIFT  &none    &kp ENTER        &none  &kp LCTRL  &lt 1 ENTER  &kp LEFT_ALT  &none
+&bootloader        &none  &none    &none   &none     &none        &kp UP_ARROW     &none         &none      &none        &none         &none          &bootloader
+&kp TAB            &kp Q  &kp W    &kp E   &kp R     &kp T        &kp DOWN_ARROW   &kp Y         &kp U      &kp I        &kp O         &kp P          &kp BSLH
+&kp ESCAPE         &kp A  &kp S    &kp D   &kp F     &kp G        &kp LEFT_ARROW   &kp H         &kp J      &kp K        &kp L         &kp BACKSPACE  &mkp MB4
+&kp GRAVE          &kp Z  &kp X    &kp C   &kp V     &kp B        &kp RIGHT_ARROW  &kp N         &kp M      &kp COMMA    &kp DOT       &kp FSLH       &kp TILDE
+&kp LC(LA(LG(M)))  &none  &none    &kp     LEFT_GUI  &lt 2 SPACE  &kp LEFT_SHIFT   &kp ENTER     &kp LCTRL  &lt 1 ENTER  &kp LEFT_ALT  &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -186,11 +186,11 @@
 
         wp_sym {
             bindings = <
-&bootloader  &none      &none            &none              &none             &none        &mmv MOVE_UP     &none  &none             &none             &none             &none                   &rgb_ug RGB_TOG
-&to 0        &braces    &kp SEMI         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET    &mmv MOVE_DOWN   &none  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &arc1                   &arc2
-&trans       &parent    &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK    &mmv MOVE_LEFT   &term  &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(LC(LEFT))        &kp LC(LA(RIGHT))
-&trans       &brackets  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp COLON    &mmv MOVE_RIGHT  &none  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))
-&kp C_MUTE   &none      &kp LEFT_GUI     &to 0              &kp LEFT_SHIFT    &none        &mkp LCLK        &none  &kp LCTRL         &to 2             &kp LEFT_ALT      &none
+&bootloader  &none      &none            &none              &none             &none            &mmv MOVE_UP     &none       &none             &none             &none             &none                   &rgb_ug RGB_TOG
+&to 0        &braces    &kp SEMI         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET        &mmv MOVE_DOWN   &none       &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &arc1                   &arc2
+&trans       &parent    &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK        &mmv MOVE_LEFT   &term       &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(LC(LEFT))        &kp LC(LA(RIGHT))
+&trans       &brackets  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp COLON        &mmv MOVE_RIGHT  &none       &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))
+&kp C_MUTE   &none      &none            &kp LEFT_GUI       &to 0             &kp LEFT_SHIFT   &mkp LCLK        &kp LCTRL   &to 2             &kp LEFT_ALT.     &none             &none             
             >;
 
             display-name = "wp_sym";
@@ -203,7 +203,7 @@
 &to 0       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans            &trans              &mmv MOVE_DOWN   &foldall  &kp HOME        &kp UP    &kp PG_UP  &none              &kp LC(TAB)
 &kp ESC     &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &mmv MOVE_LEFT   &fold     &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LA(BACKSPACE)  &kp RBRC
 &trans      &none             &none             &none             &none             &none               &mmv MOVE_RIGHT  &expand   &kp END         &kp DEL   &kp PG_DN  &kp LC(DEL)        &kp LC(GRAVE)
-&trans      &trans            &trans            &to 0             &trans            &trans              &mkp LCLK        &trans    &trans          &to 2     &trans     &trans
+&trans      &trans            &trans            &trans            &to 0             &trans              &mkp LCLK        &trans    &to 2           &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -211,11 +211,11 @@
 
         num {
             bindings = <
-&bootloader  &none   &none   &none   &none   &none    &mmv MOVE_UP     &none      &none    &none         &none   &none  &bootloader
-&to 0        &none   &none   &none   &none   &none    &mmv MOVE_DOWN   &kp ASTRK  &kp N7   &kp N8        &kp N9  &none  &none
-&none        &none   &none   &none   &none   &none    &mmv MOVE_LEFT   &kp PLUS   &kp N4   &kp N5        &kp N6  &none  &none
-&none        &none   &none   &none   &none   &none    &mmv MOVE_RIGHT  &kp MINUS  &kp N1   &kp N2        &kp N3  &none  &none
-&trans       &trans  &trans  &trans  &trans  &none    &mkp LCLK        &none      &kp DOT  &kp NUMBER_0  &none   &none
+&bootloader  &none   &none   &none   &none   &none    &mmv MOVE_UP     &none      &none          &none         &none   &none  &bootloader
+&to 0        &none   &none   &none   &none   &none    &mmv MOVE_DOWN   &kp ASTRK  &kp N7         &kp N8        &kp N9  &none  &none
+&none        &none   &none   &none   &none   &none    &mmv MOVE_LEFT   &kp PLUS   &kp N4         &kp N5        &kp N6  &none  &none
+&none        &none   &none   &none   &none   &none    &mmv MOVE_RIGHT  &kp MINUS  &kp N1         &kp N2        &kp N3  &none  &none
+&trans       &trans  &trans  &trans  &trans  &none    &mkp LCLK        &kp DOT    &kp NUMBER_0   &none         &none   &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -223,11 +223,11 @@
 
         fn {
             bindings = <
-&bootloader  &none      &none      &none      &none              &none            &mmv MOVE_UP     &none  &none    &none  &none          &none  &bootloader
-&to 0        &exitvi    &kp F2     &kp F12    &none              &none            &mmv MOVE_DOWN   &none  &none    &none  &none          &none  &none
-&none        &none      &none      &none      &kp LG(F)          &kp LG(LS(F))    &mmv MOVE_LEFT   &none  &none    &none  &kp LS(LG(L))  &none  &none
-&none        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LA(LC(LG(V)))  &none            &mmv MOVE_RIGHT  &none  &none    &none  &none          &none  &none
-&trans       &trans     &trans     &trans     &trans             &none            &mkp LCLK        &none  &kp DOT  &none  &none          &none
+&bootloader  &none      &none      &none      &none              &none            &mmv MOVE_UP     &none    &none    &none  &none          &none  &bootloader
+&to 0        &exitvi    &kp F2     &kp F12    &none              &none            &mmv MOVE_DOWN   &none    &none    &none  &none          &none  &none
+&none        &none      &none      &none      &kp LG(F)          &kp LG(LS(F))    &mmv MOVE_LEFT   &none    &none    &none  &kp LS(LG(L))  &none  &none
+&none        &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LA(LC(LG(V)))  &none            &mmv MOVE_RIGHT  &none    &none    &none  &none          &none  &none
+&trans       &trans     &trans     &trans     &trans             &trans           &mkp LCLK        &&trans  &kp DOT  &none  &none          &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
