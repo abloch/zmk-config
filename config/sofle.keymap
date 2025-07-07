@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &msc {
@@ -179,7 +180,7 @@
 &kp LC(LA(LG(M)))  &none  &none  &kp LEFT_GUI  &lt 2 SPACE  &kp LEFT_SHIFT    &kp ENTER        &kp LCTRL  &lt 1 ENTER  &kp LEFT_ALT  &none    &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LG(Z) LG(LS(Z))>;
             display-name = "base";
         };
 
@@ -189,11 +190,11 @@
 &to 0        &braces    &kp SEMI         &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET         &mmv MOVE_DOWN   &none      &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &arc1                   &arc2
 &trans       &parent    &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK         &mmv MOVE_LEFT   &term      &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(LC(LEFT))        &kp LC(LA(RIGHT))
 &trans       &brackets  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp COLON         &mmv MOVE_RIGHT  &none      &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))
-&kp C_MUTE   &none      &none            &kp LEFT_GUI       &to 0             &kp LEFT_SHIFT    &mkp LCLK        &kp LCTRL  &to 2             &kp LEFT_ALT      &none             &none
+&kp C_MUTE   &none      &none            &kp LEFT_GUI       &to 3             &kp LEFT_SHIFT    &mkp LCLK        &kp LCTRL  &kp RET           &kp LEFT_ALT      &none             &none
             >;
 
             display-name = "wp_sym";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         nav {
@@ -202,10 +203,10 @@
 &to 0       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans            &trans              &mmv MOVE_DOWN   &foldall  &kp HOME        &kp UP    &kp PG_UP  &none              &kp LC(TAB)
 &kp ESC     &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &mmv MOVE_LEFT   &fold     &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LA(BACKSPACE)  &kp RBRC
 &trans      &none             &none             &none             &none             &none               &mmv MOVE_RIGHT  &expand   &kp END         &kp DEL   &kp PG_DN  &kp LC(DEL)        &kp LC(GRAVE)
-&trans      &trans            &trans            &trans            &to 0             &trans              &mkp LCLK        &trans    &to 2           &trans    &trans     &trans
+&trans      &trans            &trans            &trans            &to 0             &trans              &mkp LCLK        &trans    &tog 2          &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         num {
@@ -230,6 +231,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        onetothree {
+            if-layers = <1>;
+            then-layer = <2>;
         };
     };
 };
