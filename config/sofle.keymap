@@ -53,7 +53,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(LC(LA(T)))>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 5>,
                 <&kp LA(NUMBER_3)>;
 
             label = "TERM";
