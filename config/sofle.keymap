@@ -353,13 +353,13 @@
         nav {
             bindings = <
 &none           &none             &none             &none             &none             &none            &none            &none      &none           &none     &none      &none             &none
-&to 0           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &none             &none            &kp LGUI         &m7        &kp PG_UP       &kp UP    &kp HOME  &none             &kp WH_L
+&to 0           &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &none             &none            &kp LGUI         &m7        &kp PG_UP       &kp UP    &kp HOME  &none             &msc SCRL_LEFT
 &kp ESC         &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5) &kp SPACE        &m5        &kp LEFT_ARROW  &kp DOWN  &kp RIGHT &kp LA(BACKSPACE) &none
-&kp LC(GRAVE)   &none             &none             &none             &kp LS(F4)        &kp F4           &kp LSHIFT       &m6        &kp PG_DN       &kp DEL   &kp END   &kp LA(DEL)       &kp WH_R
+&kp LC(GRAVE)   &none             &none             &none             &kp LS(F4)        &kp F4           &kp LSHIFT       &m6        &kp PG_DN       &kp DEL   &kp END   &kp LA(DELETE)    &msc SCRL_RIGHT
 &none           &none             &trans            &kp LGUI          &to 3             &kp LSHIFT       &kp LCTRL        &kp LCTRL  &kp ENTER       &kp LALT  &none     &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS) &inc_dec_kp C_SCROLL_DOWN C_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS) &inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
             display-name = "nav";
         };
 
