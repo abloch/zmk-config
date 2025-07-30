@@ -341,7 +341,7 @@
 &none       &none   &none            &none              &none             &none             &none            &none      &none             &none             &none             &none             &none
 &to 0       &m0     &kp SEMI         &kp DQT            &kp SQT           &kp CARET         &kp LGUI         &kp CARET  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(N9)        &m12              &m11
 &kp ESC     &m1     &kp DOLLAR       &kp PERCENT        &kp AMPS          &kp ASTRK         &kp SPACE        &m3        &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &m13              &m14
-&kp QUESTION &m2    &kp EXCL         &kp AT             &kp HASH          &kp COLON         &td2             &kp LA(NUMBER_0) &kp LA(NUMBER_1) &kp LA(NUMBER_2) &kp LA(NUMBER_3) &m14
+&kp QUESTION &m2    &kp EXCL         &kp AT             &kp HASH          &kp COLON         &td2             &kp LA(NUMBER_0) &kp LA(NUMBER_1) &kp LA(NUMBER_2) &kp LA(NUMBER_3) &m14              &none
 &none       &none   &none            &kp LGUI           &to 3             &kp LSHIFT        &kp LCTRL        &kp LCTRL  &kp ENTER         &kp LALT          &none            &none
             >;
 
