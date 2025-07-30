@@ -383,7 +383,7 @@
 &none            &none      &none      &none      &none              &none          &none            &none  &none         &none         &none          &none      &none
 &to 0            &m9        &kp F2     &kp F12 &kp F12           &kp F9         &kp LGUI         &kp F5 &kp F11   &kp F11       &kp F10        &m8        &none
 &to 0            &m20       &none &none &kp LG(F)    &none  &none            &none &none &m15 &kp F4 &none &none
-&kp CAPS         &none      &none      &none &kp LG(V)      &none &kp CAPS_WORD &none &none    &none         &m4            &none &none
+&kp CAPS         &none      &none      &none &kp LG(V)      &none &caps_word &none &none    &none         &m4            &none &none
 &none            &none      &none      &none      &none              &none          &kp LCTRL        &kp LCTRL  &none         &none         &none          &none
             >;
 
