@@ -54,7 +54,7 @@
         m3: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(T))) &macro_wait_time 100 &kp LA(NUMBER_3)>;
+            bindings = <&kp LG(T) &macro_wait_time 100 &kp LA(NUMBER_3)>;
             label = "M3";
         };
 
@@ -94,7 +94,7 @@
         m8: m8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LG(P))>;
+            bindings = <&kp LA(P)>;
             label = "M8";
         };
 
@@ -328,10 +328,10 @@
 &kp TAB             &kp Q       &kp W       &kp E         &kp R        &kp T           &td0             &kp Y       &kp U        &kp I         &kp O       &td10          &kp LG(LEFT)
 &kp ESCAPE          &kp A       &kp S       &kp D         &kp F        &kp G           &lt 2 SPACE      &kp H       &kp J        &td15         &kp L       &kp BACKSPACE  &mkp MB4
 &kp GRAVE           &kp Z       &kp X       &kp C         &kp V        &kp B           &td2             &kp N       &kp M        &kp COMMA     &kp DOT     &kp FSLH       &kp LS(GRAVE)
-&kp LC(LA(LG(M)))   &none       &kp C_MUTE  &kp LG(LC(LA(M))) &lt 2 SPACE &kp LSHIFT  &kp LG(LC(LA(F))) &kp LCTRL   &lt 1 ENTER  &td3          &none       &none
+&none   &none       &kp C_MUTE  &none &lt 2 SPACE &kp LSHIFT  &none &kp LCTRL   &lt 1 ENTER  &td3          &none       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z) &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LG(Z) LG(Y) &inc_dec_kp C_VOL_UP C_VOL_DN>;
             display-name = "base";
         };
 
@@ -381,9 +381,9 @@
         function {
             bindings = <
 &none            &none      &none      &none      &none              &none          &none            &none  &none         &none         &none          &none      &none
-&to 0            &m9        &kp F2     &kp LG(F12) &kp F12           &kp F9         &kp LGUI         &kp F5 &kp LS(F11)   &kp F11       &kp F10        &m8        &none
-&to 0            &m20       &kp LG(LC(LA(S))) &none &kp LG(F)    &kp LG(LS(F))  &none            &kp LG(LS(F5)) &kp LG(LS(L)) &m15 &kp F4 &none &none
-&kp CAPS         &none      &none      &kp LG(LS(C)) &kp LG(V)      &kp LG(LC(LA(V))) &kp CAPS_WORD &kp LS(F5) &none    &none         &m4            &none &none
+&to 0            &m9        &kp F2     &kp F12 &kp F12           &kp F9         &kp LGUI         &kp F5 &kp F11   &kp F11       &kp F10        &m8        &none
+&to 0            &m20       &none &none &kp LG(F)    &none  &none            &none &none &m15 &kp F4 &none &none
+&kp CAPS         &none      &none      &none &kp LG(V)      &none &kp CAPS_WORD &none &none    &none         &m4            &none &none
 &none            &none      &none      &none      &none              &none          &kp LCTRL        &kp LCTRL  &none         &none         &none          &none
             >;
 
