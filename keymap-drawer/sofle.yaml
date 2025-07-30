@@ -53,13 +53,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: Sft+`, s: Sft+~}
-  - Ctl+Alt+Gui+M
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
-  - Gui+Ctl+Alt+M
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - $$mdi:apple-keyboard-shift$$
-  - Gui+Ctl+Alt+F
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - '&td3'
@@ -277,25 +277,25 @@ layers:
   - {t: base, h: toggle}
   - '&m9'
   - F2
-  - Gui+F12
+  - F12
   - F12
   - F9
   - LGUI
   - F5
-  - Sft+F11
+  - F11
   - F11
   - F10
   - '&m8'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: base, h: toggle}
   - '&m20'
-  - Gui+Ctl+Alt+S
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - Gui+Sft+F
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+Sft+F5
-  - {t: Gui+Sft+L, type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '&m15', type: held alternate}
   - {t: F4, type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -303,11 +303,11 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Gui+Sft+C
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - Gui+Ctl+Alt+V
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - CAPS WORD
-  - {t: Sft+F5, type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - '&m4'
