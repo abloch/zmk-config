@@ -54,7 +54,7 @@
         m3: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(T) &macro_wait_time 100 &kp LA(NUMBER_3)>;
+            bindings = <&kp LG(LC(LA(T))) &macro_wait_time 100 &kp LA(NUMBER_3)>;
             label = "M3";
         };
 
@@ -94,7 +94,7 @@
         m8: m8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(P)>;
+            bindings = <&macro_press &kp LALT &kp LGUI &macro_tap &kp P &macro_release &kp LALT &kp LGUI>;
             label = "M8";
         };
 
@@ -159,7 +159,7 @@
         m20: m20 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(GRAVE) &macro_wait_time 100 &kp EXCLAMATION &kp EXCLAMATION &kp ENTER>;
+            bindings = <&kp LC(GRAVE) &macro_wait_time 100 &kp EXCL &kp EXCL &kp ENTER>;
             label = "M20";
         };
 
@@ -239,8 +239,8 @@
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sk LSHIFT>;
+            tapping-term-ms = <150>;
+            bindings = <&kp SPACE>, <&kp RSHIFT>;
         };
 
         td3: tap_dance_3 {
@@ -254,7 +254,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp L>, <&kp L>, <&m10>;
+            bindings = <&kp L>, <&none>, <&m10>;
         };
     };
 
@@ -280,7 +280,7 @@
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <16 30>;
+            key-positions = <30 16>; // F + E
         };
 
         dash {
@@ -290,37 +290,42 @@
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <43 41>;
+            key-positions = <41 43>; // X + V
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <34 36>;
+            key-positions = <20 33>; // Y + H
         };
 
         eql {
             bindings = <&kp EQUAL>;
-            key-positions = <47 49>;
+            key-positions = <33 46>; // H + N
         };
 
         mo3 {
             bindings = <&mo 3>;
-            key-positions = <30 29 28>;
+            key-positions = <28 29 30>; // S + D + F
         };
 
-        mo4 {
+        mo4_right {
             bindings = <&sl 4>;
-            key-positions = <47 48 49>;
+            key-positions = <34 35 36>; // J + K + L
+        };
+
+        mo4_bottom {
+            bindings = <&sl 4>;
+            key-positions = <47 48 49>; // M + , + .
         };
 
         mo2 {
             bindings = <&mo 2>;
-            key-positions = <27 28 29 30>;
+            key-positions = <28 16 30>; // S + E + F
         };
 
         to2 {
             bindings = <&to 2>;
-            key-positions = <27 28 29>;
+            key-positions = <27 28 16 30>; // A + S + E + F
         };
 
         to3 {
@@ -331,6 +336,17 @@
         to4 {
             bindings = <&to 4>;
             key-positions = <46 47 48 49>;
+        };
+
+        // Mouse button combos from Vial
+        mouse1 {
+            bindings = <&mkp LCLK>;
+            key-positions = <14 29>; // Q + D
+        };
+
+        mouse2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <27 42>; // A + C  
         };
     };
 
@@ -349,11 +365,11 @@
         //             └───┴───┴───┘     └───┴───┴───┘
         base {
             bindings = <
-&bootloader        &none  &none  &none      &none         &none         &kp UP_ARROW     &none      &none         &none       &none    &td10         &bootloader
-&kp TAB            &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y      &kp U         &kp I       &kp O    &kp P         &td10
-&kp ESC            &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H      &kp J         &kp K       &kp L    &kp BSPC      &mkp MB4
-&kp GRAVE          &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA   &kp DOT  &kp SLASH     &kp LS(GRAVE)
-&kp LC(LA(LG(M)))  &none  &none  &td0       &lt 2 SPACE   &td2          &kp LCTRL       &lt 1 ENTER  &td3          &kp C_MUTE  &none    &none
+&bootloader        &none  &none  &none      &none         &none         &kp UP_ARROW     &none          &none         &none       &none    &td10         &bootloader
+&kp TAB            &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y          &kp U         &kp I       &kp O    &kp P         &td10
+&kp ESC            &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H          &kp J         &kp K       &kp L    &kp BSPC      &mkp MB4
+&kp GRAVE          &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA   &kp DOT  &kp SLASH     &kp LS(GRAVE)
+&kp LC(LA(LG(M)))  &none  &none  &td0       &lt 2 SPACE   &td2          &kp ENTER        &lt 1 ENTER    &td3          &kp C_MUTE  &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
@@ -385,9 +401,9 @@
 
         // Layer 2: Navigation layer from Vial
         // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
-        // │TO0│G-1│G-2│G-3│   │   │     │FOL│HOM│ ▲ │PgU│   │TO0│
+        // │TO0│G-1│G-2│G-3│   │   │     │FD*│HOM│ ▲ │PgU│   │TO0│
         // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
-        // │ESC│C-1│C-2│C-3│C-4│C-5│     │FOL│ ◄ │ ▼ │ ► │A-←│C-T│
+        // │ESC│C-1│C-2│C-3│C-4│C-5│     │FLD│ ◄ │ ▼ │ ► │A-←│C-T│
         // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
         // │C-`│   │   │   │SF4│F4 │     │EXP│END│DEL│PgD│A-D│C-`│
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
@@ -396,10 +412,10 @@
         nav {
             bindings = <
 &bootloader    &none       &none       &none       &none       &none       &mmv MOVE_UP     &none      &none     &none      &none      &none         &bootloader
-&to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none       &mmv MOVE_UP     &foldall   &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
-&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &mmv MOVE_DOWN   &fold      &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
-&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4      &mmv MOVE_LEFT   &expand    &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
-&trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mmv MOVE_RIGHT  &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
+&to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none       &mmv MOVE_DOWN   &foldall   &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
+&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &mmv MOVE_LEFT   &fold      &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
+&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4      &mmv MOVE_RIGHT  &expand    &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
+&trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mkp MB4         &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -417,11 +433,11 @@
         //             └───┴───┴───┘     └───┴───┴───┘
         numbers {
             bindings = <
-&bootloader  &none       &none       &none       &none       &none      &mmv MOVE_UP     &none      &none      &none   &none   &none         &bootloader
-&to 0        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5     &mmv MOVE_DOWN   &none      &kp N9     &kp N8  &kp N7  &kp ASTERISK  &none
-&to 0        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &none      &mmv MOVE_LEFT   &kp PLUS   &kp N6     &kp N5  &kp N4  &kp PLUS      &kp N0
-&none        &none       &none       &none       &none       &none      &mmv MOVE_RIGHT  &kp MINUS  &kp N3     &kp N2  &kp N1  &kp MINUS     &kp DOT
-&trans       &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT  &kp DOT          &kp N0     &kp LALT   &trans  &trans  &trans
+&bootloader  &none           &none           &none         &none         &none          &mmv MOVE_UP           &none         &none         &none       &none      &none         &bootloader
+&to 0        &kp N1          &kp N2          &kp N3        &kp N4        &kp N5         &mmv MOVE_DOWN         &none         &kp N9        &kp N8      &kp N7     &kp ASTERISK  &none
+&to 0        &kp LC(N1)      &kp LC(N2)      &kp LC(N3)    &kp LC(N4)    &none          &mmv MOVE_LEFT         &kp PLUS      &kp N6        &kp N5      &kp N4     &kp PLUS      &kp N0
+&none        &none           &none           &none         &none         &none          &mmv MOVE_RIGHT        &kp MINUS     &kp N3        &kp N2      &kp N1     &kp MINUS     &kp DOT
+&trans       &trans          &trans          &kp LGUI      &kp SPACE     &kp LSHFT      &mkp MB4               &kp N0        &kp LALT      &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
@@ -440,11 +456,11 @@
         //             └───┴───┴───┘     └───┴───┴───┘
         function {
             bindings = <
-&bootloader  &none    &none              &none           &none      &none              &mmv MOVE_UP     &none           &none         &none         &none      &none         &bootloader
-&to 0        &m9      &kp F2             &kp LG(F12)     &kp F12    &kp F9             &mmv MOVE_DOWN   &kp F5          &kp F10       &kp F11       &kp LS(F11) &m8           &to 4
-&to 0        &m20     &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))      &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4        &m15          &kp LS(LG(L)) &none         &none
-&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none      &none         &kp CAPS_WORD
-&trans       &trans   &trans             &kp LGUI        &none      &kp CAPS_WORD      &kp LCTRL        &none           &kp LALT      &trans        &trans     &trans
+&bootloader  &none    &none              &none           &none      &none              &mmv MOVE_UP     &none           &none         &none         &none             &none        &bootloader
+&to 0        &m9      &kp F2             &kp LG(F12)     &kp F12    &kp F9             &mmv MOVE_DOWN   &kp F5          &kp F10       &kp F11       &kp LS(F11)       &m8          &to 4
+&to 0        &m20     &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))      &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4        &m15          &kp LS(LG(L))     &none        &none
+&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none             &none        &kp CAPS_WORD
+&trans       &trans   &trans             &kp LGUI        &none      &kp CAPS_WORD      &kp ENTER        &kp LCTRL       &none         &kp LALT      &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
