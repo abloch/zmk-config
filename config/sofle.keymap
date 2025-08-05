@@ -102,7 +102,7 @@
         m9: m9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp LS(Z) &kp LS(Z)>;
+            bindings = <&kp ESC &kp LS(Z) &kp LS(Z)>;
             label = "M9";
         };
 
@@ -159,15 +159,72 @@
         m20: m20 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(GRAVE) &macro_wait_time 100 &kp EXCL &kp EXCL &kp ENTER>;
+            bindings = <&kp LC(GRAVE) &macro_wait_time 100 &kp EXCLAMATION &kp EXCLAMATION &kp ENTER>;
             label = "M20";
         };
 
-        m10: m10 {
+        // Legacy macros from original keymap
+        arc1: arc1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(Q))>;
-            label = "M10";
+            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_1)>;
+            label = "ARC1";
+        };
+
+        arc2: arc2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_2)>;
+            label = "ARC2";
+        };
+
+        parent: parent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "PARENT";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "BRACKETS";
+        };
+
+        term: term {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(T))) &macro_wait_time 30 &kp LA(NUMBER_3)>;
+            label = "TERM";
+        };
+
+        foldall: foldall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K) &kp LG(NUMBER_0)>;
+            label = "FOLDALL";
+        };
+
+        fold: fold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K) &kp LG(LEFT_BRACKET)>;
+            label = "FOLD";
+        };
+
+        expand: expand {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(K) &kp LG(RIGHT_BRACKET)>;
+            label = "EXPAND";
+        };
+
+        exitvi: exitvi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp LS(Z) &kp LS(Z)>;
+            label = "EXITVI";
         };
     };
 
@@ -183,7 +240,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&kp LSHFT>, <&sk LSHFT>;
+            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&sk LSHIFT>;
         };
 
         td3: tap_dance_3 {
@@ -197,7 +254,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp L>, <&none>, <&m10>;
+            bindings = <&kp L>, <&kp L>, <&m10>;
         };
     };
 
@@ -281,13 +338,22 @@
         compatible = "zmk,keymap";
 
         // Layer 0: Base layer from Vial
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │TAB│ Q │ W │ E │ R │ T │ ▲ ▼ │ Y │ U │ I │ O │ P │T10│
+        // ├───┼───┼───┼───┼───┼───┤ ◄ ► ├───┼───┼───┼───┼───┼───┤
+        // │ESC│ A │ S │ D │ F │ G │ enc │ H │ J │ K │ L │BSP│MB4│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │ ` │ Z │ X │ C │ V │ B │     │ N │ M │ , │ . │ / │ ~ │
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │TD0│SP2│TD2│     │CTL│EN1│TD3│
+        //             └───┴───┴───┘     └───┴───┴───┘
         base {
             bindings = <
-&bootloader    &none  &none  &none     &none        &none         &kp UP_ARROW     &none      &none        &none      &none    &td10        &bootloader
-&kp TAB        &kp Q  &kp W  &kp E     &kp R        &kp T         &kp DOWN_ARROW   &kp Y      &kp U        &kp I      &kp O    &kp P        &mkp MB4
-&kp ESCAPE     &kp A  &kp S  &kp D     &kp F        &kp G         &kp LEFT_ARROW   &kp H      &kp J        &kp K      &kp L    &kp BSPC     &kp C_BRI_UP
-&kp GRAVE      &kp Z  &kp X  &kp C     &kp V        &kp B         &kp RIGHT_ARROW  &kp N      &kp M        &kp COMMA  &kp DOT  &kp FSLH     &kp LS(GRAVE)
-&kp LC(LA(LG(M)))  &none  &none  &td0  &lt 2 SPACE  &td2         &lt 1 ENTER     &kp LCTRL  &td3         &kp C_MUTE  &none    &none
+&bootloader        &none  &none  &none      &none         &none         &kp UP_ARROW     &none      &none         &none       &none    &td10         &bootloader
+&kp TAB            &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y      &kp U         &kp I       &kp O    &kp P         &td10
+&kp ESC            &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H      &kp J         &kp K       &kp L    &kp BSPC      &mkp MB4
+&kp GRAVE          &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA   &kp DOT  &kp SLASH     &kp LS(GRAVE)
+&kp LC(LA(LG(M)))  &none  &none  &td0       &lt 2 SPACE   &td2          &kp LCTRL       &lt 1 ENTER  &td3          &kp C_MUTE  &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
@@ -295,13 +361,22 @@
         };
 
         // Layer 1: Symbols layer from Vial  
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │TO0│( )│ ; │ " │ ' │ $ │     │ ^ │A-7│A-8│A-9│M11│M12│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │ESC│( )│ $ │ % │ & │ * │     │TRM│A-4│A-5│A-6│M13│M14│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │A-0│[ ]│ ! │ @ │ # │ ; │     │A-0│A-1│A-2│A-3│AC←│AC→│
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │GUI│SPC│SHF│     │CTL│RET│ALT│
+        //             └───┴───┴───┘     └───┴───┴───┘
         symbols {
             bindings = <
-&to 0         &none      &none         &none         &none         &none         &mmv MOVE_UP     &none      &none         &none         &none         &arc1         &arc2
-&kp ESC       &parent    &kp SEMI      &kp DQT       &kp SQT       &kp DLLR      &mmv MOVE_DOWN   &kp CARET  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
-&kp ESC       &parent    &kp DLLR      &kp PRCNT     &kp AMPS      &kp ASTRK     &mmv MOVE_LEFT   &term      &kp LA(N4)    &kp LA(N5)    &kp LA(N6)    &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
-&kp QMARK     &brackets  &kp EXCL      &kp AT        &kp HASH      &kp SEMI      &mmv MOVE_RIGHT  &none      &kp LA(N1)    &kp LA(N2)    &kp LA(N3)    &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
-&none         &none      &none         &kp LGUI      &kp SPACE     &kp LSHFT     &mkp LCLK        &kp LCTRL  &kp RET       &kp LALT      &none         &none
+&bootloader  &none      &none            &none         &none          &none          &mmv MOVE_UP     &none         &none         &none         &none         &none             &bootloader
+&to 0        &parent    &kp SEMI         &kp DQT       &kp SQT        &kp DOLLAR     &mmv MOVE_DOWN   &kp CARET     &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &m11              &m12
+&kp ESC      &parent    &kp DOLLAR       &kp PERCENT   &kp AMPERSAND  &kp ASTERISK   &mmv MOVE_LEFT   &term         &kp LA(N4)    &kp LA(N5)    &kp LA(N6)    &m13              &m14
+&kp LA(N0)   &brackets  &kp EXCLAMATION  &kp AT        &kp HASH       &kp SEMI       &mmv MOVE_RIGHT  &kp LA(N0)    &kp LA(N1)    &kp LA(N2)    &kp LA(N3)    &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
+&none        &none      &none            &kp LGUI      &kp SPACE      &kp LSHFT      &mkp LCLK        &kp LCTRL     &kp RET       &kp LALT      &none         &none
             >;
 
             display-name = "wp_sym";
@@ -309,25 +384,44 @@
         };
 
         // Layer 2: Navigation layer from Vial
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │TO0│G-1│G-2│G-3│   │   │     │FOL│HOM│ ▲ │PgU│   │TO0│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │ESC│C-1│C-2│C-3│C-4│C-5│     │FOL│ ◄ │ ▼ │ ► │A-←│C-T│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │C-`│   │   │   │SF4│F4 │     │EXP│END│DEL│PgD│A-D│C-`│
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │GUI│SPC│SHF│     │ALT│RET│CTL│
+        //             └───┴───┴───┘     └───┴───┴───┘
         nav {
             bindings = <
-&to 0       &kp LG(N1)        &kp LG(N2)        &kp LG(N3)        &none             &none               &mmv MOVE_UP     &foldall   &kp HOME        &kp UP    &kp PG_UP  &kp OSM(MOD_LALT|MOD_LGUI)  &kp C_AL_LOCK
-&kp ESC     &kp LC(N1)        &kp LC(N2)        &kp LC(N3)        &kp LC(N4)        &kp LC(N5)          &mmv MOVE_DOWN   &fold      &kp LEFT        &kp DOWN  &kp RIGHT  &kp LA(BSPC)     &kp LC(TAB)
-&kp LC(GRAVE)  &none          &none             &none             &kp LS(F4)        &kp F4              &mmv MOVE_LEFT   &expand    &kp END         &kp DEL   &kp PG_DN  &kp LA(DEL)      &kp LC(GRAVE)
-&trans      &trans            &trans            &kp LGUI          &kp SPACE         &kp LSHFT           &mmv MOVE_RIGHT  &kp LALT   &kp RET         &kp LCTRL &trans     &trans
+&bootloader    &none       &none       &none       &none       &none       &mmv MOVE_UP     &none      &none     &none      &none      &none         &bootloader
+&to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none       &mmv MOVE_UP     &foldall   &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
+&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &mmv MOVE_DOWN   &fold      &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
+&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4      &mmv MOVE_LEFT   &expand    &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
+&trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mmv MOVE_RIGHT  &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
         // Layer 3: Numbers layer from Vial
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │TO0│ 1 │ 2 │ 3 │ 4 │ 5 │     │   │ 9 │ 8 │ 7 │ * │   │
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │TO0│C-1│C-2│C-3│C-4│   │     │ + │ 6 │ 5 │ 4 │ + │ 0 │
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │   │   │   │   │   │   │     │ - │ 3 │ 2 │ 1 │ - │ . │
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │GUI│SPC│SHF│     │ . │ 0 │ALT│
+        //             └───┴───┴───┘     └───┴───┴───┘
         numbers {
             bindings = <
-&to 0        &kp LC(N1)       &kp LC(N2)       &kp LC(N3)       &kp LC(N4)       &none            &mmv MOVE_UP     &none      &kp N9        &kp N8  &kp N7  &kp ASTRK  &none
-&to 0        &kp LC(N1)       &kp LC(N2)       &kp LC(N3)       &kp LC(N4)       &none            &mmv MOVE_DOWN   &kp PLUS   &kp N6        &kp N5  &kp N4  &none      &none
-&none        &none            &none            &none            &none            &none            &mmv MOVE_LEFT   &kp MINUS  &kp N3        &kp N2  &kp N1  &none      &none
-&none        &none            &none            &none            &none            &none            &mmv MOVE_RIGHT  &kp DOT    &kp N0        &none   &none   &none      &none
-&trans       &trans           &trans           &trans           &trans           &trans           &mkp LCLK        &kp LCTRL  &trans        &trans  &trans  &trans
+&bootloader  &none       &none       &none       &none       &none      &mmv MOVE_UP     &none      &none      &none   &none   &none         &bootloader
+&to 0        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5     &mmv MOVE_DOWN   &none      &kp N9     &kp N8  &kp N7  &kp ASTERISK  &none
+&to 0        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &none      &mmv MOVE_LEFT   &kp PLUS   &kp N6     &kp N5  &kp N4  &kp PLUS      &kp N0
+&none        &none       &none       &none       &none       &none      &mmv MOVE_RIGHT  &kp MINUS  &kp N3     &kp N2  &kp N1  &kp MINUS     &kp DOT
+&trans       &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT  &kp DOT          &kp N0     &kp LALT   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
@@ -335,12 +429,22 @@
         };
 
         // Layer 4: Function layer from Vial
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │TO0│M9 │F2 │G12│F12│F9 │     │F5 │F10│F11│SF1│M8 │TO4│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │TO0│M20│CAG│SG4│G-F│SGF│     │SGF│F4 │M15│SGL│   │   │
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │CAP│   │   │SGC│G-V│CAV│     │SF5│M4 │   │   │   │CAP│
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │GUI│   │CAP│     │CTL│   │ALT│
+        //             └───┴───┴───┘     └───┴───┴───┘
         function {
             bindings = <
-&to 0            &exitvi    &kp F2     &kp LG(F12)        &kp F12           &kp F9            &mmv MOVE_UP     &kp F5         &kp F10       &kp F11        &kp LS(F11)    &none  &to 4
-&to 0            &none      &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)        &kp LS(LG(F))     &mmv MOVE_DOWN   &kp LS(LG(F5)) &kp F4        &none          &kp LS(LG(L))  &none  &none
-&kp CAPS         &none      &none      &kp LS(LG(C))      &kp LG(V)         &kp LC(LA(LG(V))) &mmv MOVE_LEFT   &kp LS(LG(F5)) &none         &none          &none          &none  &none
-&none            &none      &none      &trans             &trans            &trans            &mmv MOVE_RIGHT  &kp LALT       &none         &none          &none          &none  &none
+&bootloader  &none    &none              &none           &none      &none              &mmv MOVE_UP     &none           &none         &none         &none      &none         &bootloader
+&to 0        &m9      &kp F2             &kp LG(F12)     &kp F12    &kp F9             &mmv MOVE_DOWN   &kp F5          &kp F10       &kp F11       &kp LS(F11) &m8           &to 4
+&to 0        &m20     &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))      &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4        &m15          &kp LS(LG(L)) &none         &none
+&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none      &none         &kp CAPS_WORD
+&trans       &trans   &trans             &kp LGUI        &none      &kp CAPS_WORD      &kp LCTRL        &none           &kp LALT      &trans        &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
@@ -348,13 +452,22 @@
         };
 
         // Layer 5: Transparent layer from Vial
+        // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
+        // │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│     │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│     │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│
+        // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
+        // │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│     │▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│▫▫▫│
+        // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
+        //             │▫▫▫│▫▫▫│▫▫▫│     │▫▫▫│▫▫▫│▫▫▫│
+        //             └───┴───┴───┘     └───┴───┴───┘
         transparent {
             bindings = <
-&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
