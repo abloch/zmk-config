@@ -459,8 +459,8 @@
 &bootloader  &none    &none              &none           &none      &none              &mmv MOVE_UP     &none           &none         &none         &none             &none        &bootloader
 &to 0        &m9      &kp F2             &kp LG(F12)     &kp F12    &kp F9             &mmv MOVE_DOWN   &kp F5          &kp F10       &kp F11       &kp LS(F11)       &m8          &to 4
 &to 0        &m20     &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))      &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4        &m15          &kp LS(LG(L))     &none        &none
-&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none             &none        &kp CAPS_WORD
-&trans       &trans   &trans             &kp LGUI        &none      &kp CAPS_WORD      &kp ENTER        &kp LCTRL       &none         &kp LALT      &trans            &trans
+&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none             &none        &caps_word
+&trans       &trans   &trans             &kp LGUI        &none      &caps_word         &kp ENTER        &kp LCTRL       &none         &kp LALT      &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
