@@ -2,17 +2,17 @@ layout: {zmk_keyboard: sofle}
 layers:
   base:
   - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&td10'
   - $$mdi:progress-download$$
   - $$mdi:keyboard-tab$$
   - Q
@@ -20,23 +20,23 @@ layers:
   - E
   - R
   - T
-  - '&td0'
+  - $$mdi:arrow-down-bold$$
   - Y
   - U
   - I
   - O
+  - P
   - '&td10'
-  - Gui+$$mdi:arrow-left-bold$$
   - $$mdi:keyboard-esc$$
   - A
   - S
   - D
   - F
   - G
-  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - $$mdi:arrow-left-bold$$
   - H
   - J
-  - '&td15'
+  - K
   - L
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&mkp MB4'
@@ -46,285 +46,285 @@ layers:
   - C
   - V
   - B
-  - '&td2'
+  - $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: Sft+`, s: Sft+~}
+  - Ctl+Alt+Gui+M
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&td0'
+  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - '&td2'
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', h: wp_sym}
+  - '&td3'
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: nav}
-  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', h: symbols}
-  - '&td3'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  symbols:
+  wp_sym:
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - {t: base, h: toggle}
-  - '&m0'
+  - '&parent'
   - {t: ;, s: ':'}
   - '"'
   - {t: '''', s: '"'}
+  - $
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - ^
-  - LGUI
-  - ^
-  - Alt+7
-  - Alt+8
+  - {t: Alt+7, s: Alt+&}
+  - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
-  - '&m12'
   - '&m11'
+  - '&m12'
   - $$mdi:keyboard-esc$$
-  - '&m1'
+  - '&parent'
   - $
   - '%'
   - '&'
   - '*'
-  - $$mdi:keyboard-space$$
-  - '&m3'
-  - Alt+4
-  - Alt+5
-  - Alt+6
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&term'
+  - {t: Alt+4, s: Alt+$}
+  - {t: Alt+5, s: Alt+%}
+  - {t: Alt+6, s: Alt+^}
   - '&m13'
   - '&m14'
-  - '?'
-  - '&m2'
+  - {t: Alt+0, s: Alt+)}
+  - '&brackets'
   - '!'
   - '@'
   - '#'
-  - ':'
-  - '&td2'
-  - Alt+0
-  - Alt+1
-  - Alt+2
-  - Alt+3
-  - '&m14'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: Alt+0, s: Alt+)}
+  - {t: Alt+1, s: Alt+!}
+  - {t: Alt+2, s: Alt+@}
+  - {t: Alt+3, s: Alt+#}
+  - Alt+Ctl+$$mdi:arrow-left-bold$$
+  - Alt+Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
-  - {t: numbers, h: toggle}
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', type: held}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   nav:
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - {t: base, h: toggle}
+  - {t: Gui+1, s: Gui+!}
+  - {t: Gui+2, s: Gui+@}
+  - {t: Gui+3, s: Gui+#}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&foldall'
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: base, h: toggle}
-  - Gui+1
-  - Gui+2
-  - {t: Gui+3, type: held alternate}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LGUI
-  - '&m7'
-  - PG UP
-  - $$mdi:arrow-up-bold$$
-  - HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-left$$
   - $$mdi:keyboard-esc$$
-  - Ctl+1
-  - {t: Ctl+2, type: held alternate}
-  - Ctl+3
-  - {t: Ctl+4, type: held alternate}
-  - Ctl+5
-  - {t: '$$mdi:keyboard-space$$', type: held}
-  - '&m5'
+  - {t: Ctl+1, s: Ctl+!, type: held alternate}
+  - {t: Ctl+2, s: Ctl+@, type: held alternate}
+  - {t: Ctl+3, s: Ctl+#, type: held alternate}
+  - {t: Ctl+4, s: Ctl+$, type: held alternate}
+  - {t: Ctl+5, s: Ctl+%}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&fold'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: 'Alt+$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+$$mdi:keyboard-tab$$
   - {t: Ctl+`, s: Ctl+~}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+F4
   - F4
-  - $$mdi:apple-keyboard-shift$$
-  - '&m6'
-  - PG DN
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&expand'
   - END
+  - $$mdi:backspace-reverse-outline$$
+  - PG DN
   - Alt+$$mdi:backspace-reverse-outline$$
-  - $$mdi:pan-right$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Ctl+`, s: Ctl+~}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
-  - {t: numbers, h: toggle, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   numbers:
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - {t: base, h: toggle}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - LGUI
-  - '*'
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '9', s: (}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '8', s: '*'}
+  - {t: '7', s: '&'}
+  - '*'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: base, h: toggle}
-  - Ctl+1
-  - {t: Ctl+2, type: held}
-  - {t: Ctl+3, type: held}
-  - {t: Ctl+4, type: held}
+  - {t: Ctl+1, s: Ctl+!}
+  - {t: Ctl+2, s: Ctl+@, type: held}
+  - {t: Ctl+3, s: Ctl+#, type: held}
+  - {t: Ctl+4, s: Ctl+$, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - +
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - '0'
+  - {t: '5', s: '%'}
+  - {t: '4', s: $}
+  - +
+  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
   - {t: '3', s: '#'}
+  - {t: '2', s: '@'}
+  - {t: '1', s: '!'}
+  - {t: '-', s: _}
   - {t: ., s: '>'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
-  - '0'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - LGUI
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ., s: '>'}
+  - {t: '0', s: )}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   function:
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - {t: base, h: toggle}
   - '&m9'
   - F2
-  - F12
+  - Gui+F12
   - F12
   - F9
-  - LGUI
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F5
-  - F11
-  - F11
   - F10
+  - F11
+  - Sft+F11
   - '&m8'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: function, h: toggle}
   - {t: base, h: toggle}
   - '&m20'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Alt+Gui+S
+  - {t: Sft+Gui+4, s: Sft+Gui+$}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: '&m15', type: held alternate}
-  - {t: F4, type: held alternate}
+  - Sft+Gui+F
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - Sft+Gui+F5
+  - F4
+  - '&m15'
+  - Sft+Gui+L
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+Gui+C
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:alpha-w-box$$
+  - Ctl+Alt+Gui+V
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - Sft+F5
+  - {t: '&m4', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - '&m4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CAPS WORD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CAPS WORD
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   transparent:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -407,23 +407,15 @@ combos:
   k: +
 - p: [47, 49]
   k: {t: '=', s: +}
-- p: [33, 32]
-  k: <
-- p: [33, 45]
-  k: '>'
-- p: [28, 29, 30]
+- p: [30, 29, 28]
   k: numbers
-- p: [46, 47, 48]
-  k: {t: function, h: '$$mdi:gesture-tap-hold$$'}
-- p: [14, 29]
-  k: $$mdi:mouse-left-click-outline$$
-- p: [27, 41]
-  k: $$mdi:mouse-right-click-outline$$
-- p: [28, 16, 30]
-  k: nav
-- p: [27, 28, 16, 30]
-  k: {t: nav, h: toggle}
-- p: [34, 35, 36]
+- p: [47, 48, 49]
   k: {t: function, h: '$$mdi:gesture-tap-hold$$'}
 - p: [27, 28, 29, 30]
+  k: nav
+- p: [27, 28, 29]
+  k: {t: nav, h: toggle}
+- p: [27, 28, 29, 30]
   k: {t: numbers, h: toggle}
+- p: [46, 47, 48, 49]
+  k: {t: function, h: toggle}
