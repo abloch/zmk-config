@@ -264,7 +264,7 @@
         // From Vial: T+G = semicolon (adapt key positions for 52-key layout)
         semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <17 31>; // T + G
+            key-positions = <18 31>; // Y + G
         };
 
         // From Vial: G+B = pipe
