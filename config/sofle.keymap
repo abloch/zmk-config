@@ -240,7 +240,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp SPACE>, <&kp RSHIFT>;
+            bindings = <&kp LSHIFT> <&caps_word>;
         };
 
         td3: tap_dance_3 {
@@ -368,7 +368,7 @@
 &kp TAB            &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y          &kp U         &kp I       &kp O    &kp P         &td10
 &kp ESC            &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H          &kp J         &kp K       &kp L    &kp BSPC      &mkp MB4
 &kp GRAVE          &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA   &kp DOT  &kp SLASH     &kp LS(GRAVE)
-&kp LC(LA(LG(M)))  &none  &none  &td0       &lt 2 SPACE   &td2          &kp ENTER        &kp LCTRL     &lt 1 ENTER    &kp LALT    &none    &none
+&kp LC(LA(LG(M)))  &none  &none  &td0       &lt 2 SPACE   &kp LSHIFT    &kp ENTER        &kp LCTRL     &lt 1 ENTER    &kp LALT    &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
