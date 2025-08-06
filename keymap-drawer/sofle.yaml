@@ -58,7 +58,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td0'
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - '&td2'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: wp_sym}
