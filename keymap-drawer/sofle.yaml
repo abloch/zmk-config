@@ -60,9 +60,9 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - '&td2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: wp_sym}
-  - '&td3'
-  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wp_sym:
@@ -125,8 +125,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: held}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -391,7 +391,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [17, 31]
+- p: [18, 31]
   k: {t: ;, s: ':'}
 - p: [31, 44]
   k: '|'
