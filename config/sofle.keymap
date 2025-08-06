@@ -295,12 +295,12 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <20 33>; // Y + H
+            key-positions = <33 34>; // H + J
         };
 
         eql {
             bindings = <&kp EQUAL>;
-            key-positions = <33 46>; // H + N
+            key-positions = <46 47>; // M + N
         };
 
         mo3 {
