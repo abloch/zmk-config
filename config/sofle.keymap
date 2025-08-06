@@ -300,7 +300,7 @@
 
         eql {
             bindings = <&kp EQUAL>;
-            key-positions = <47 49>; // M + .
+            key-positions = <47 49>; // M  + .
         };
         mo3 {
             bindings = <&mo 3>;
@@ -395,7 +395,7 @@
             >;
 
             display-name = "wp_sym";
-            sensor-bindings = <&inc_dec_kp LG(RIGHT) LG(LEFT)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         // Layer 2: Navigation layer from Vial
