@@ -264,7 +264,7 @@
         // From Vial: T+G = semicolon (adapt key positions for 52-key layout)
         semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <18 31>; // Y + G
+            key-positions = <18 31>; // T + G
         };
 
         // From Vial: G+B = pipe
@@ -295,14 +295,13 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <33 34>; // H + J
+            key-positions = <34 36>; // J + L
         };
 
         eql {
             bindings = <&kp EQUAL>;
-            key-positions = <46 47>; // M + N
+            key-positions = <47 49>; // M + .
         };
-
         mo3 {
             bindings = <&mo 3>;
             key-positions = <28 29 30>; // S + D + F
