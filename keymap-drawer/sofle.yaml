@@ -56,13 +56,13 @@ layers:
   - Ctl+Alt+Gui+M
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&td0'
+  - LGUI
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: wp_sym}
-  - $$mdi:apple-keyboard-option$$
+  - '&LALT'
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wp_sym:
@@ -105,7 +105,7 @@ layers:
   - {t: Alt+6, s: Alt+^}
   - '&m13'
   - '&m14'
-  - {t: Alt+0, s: Alt+)}
+  - '?'
   - '&brackets'
   - '!'
   - '@'
@@ -125,8 +125,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', type: held}
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -217,9 +217,9 @@ layers:
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '9', s: (}
-  - {t: '8', s: '*'}
   - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - '*'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: base, h: toggle}
@@ -230,11 +230,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - +
-  - {t: '6', s: ^}
-  - {t: '5', s: '%'}
   - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - +
-  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -243,9 +243,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '3', s: '#'}
-  - {t: '2', s: '@'}
   - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: '-', s: _}
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
