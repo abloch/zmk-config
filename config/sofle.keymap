@@ -369,7 +369,7 @@
 &kp TAB            &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y          &kp U         &kp I       &kp O    &kp P         &td10
 &kp ESC            &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H          &kp J         &kp K       &kp L    &kp BSPC      &mkp MB4
 &kp GRAVE          &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA   &kp DOT  &kp SLASH     &kp LS(GRAVE)
-&kp LC(LA(LG(M)))  &none  &none  &kp LGUI   &lt 2 SPACE   &kp LSHFT     &kp ENTER        &lt 1 ENTER    &LALT         &kp C_MUTE  &none    &none
+&kp LC(LA(LG(M)))  &none  &none  &kp LGUI   &lt 2 SPACE   &kp LSHFT     &kp ENTER        &lt 1 ENTER    &kp LALT      &kp C_MUTE  &none    &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
