@@ -418,7 +418,7 @@
 &trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mkp MB4         &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN)>;
         };
 
         // Layer 3: Numbers layer from Vial
@@ -440,7 +440,7 @@
 &trans       &trans          &trans          &kp LGUI      &kp SPACE     &kp LSHFT      &mkp MB4               &kp N0        &kp LALT      &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder &scroll_encoder>;
+            sensor-bindings = <& &scroll_encoder>;
             display-name = "numbers";
         };
 
