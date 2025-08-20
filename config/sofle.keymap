@@ -440,7 +440,7 @@
 &trans       &trans          &trans          &kp LGUI      &kp SPACE     &kp LSHFT      &mkp MB4               &kp N0        &kp LALT      &trans      &trans     &trans
             >;
 
-            sensor-bindings = <& &scroll_encoder>;
+            sensor-bindings = <&scroll_encoder &scroll_encoder>;
             display-name = "numbers";
         };
 
