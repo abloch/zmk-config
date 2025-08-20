@@ -418,7 +418,7 @@
 &trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mkp MB4         &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         // Layer 3: Numbers layer from Vial
