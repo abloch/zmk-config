@@ -53,17 +53,17 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: Sft+`, s: Sft+~}
-  - Ctl+Alt+Gui+M
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', h: wp_sym}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:volume-off$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   wp_sym:
   - $$mdi:progress-download$$
@@ -125,8 +125,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: held}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
