@@ -3,7 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &msc {
     acceleration-exponent = <2>;
@@ -22,11 +22,13 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <100>;
     };
 
     macros {
         // M0: {} with cursor inside
+
         m0: m0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -35,6 +37,7 @@
         };
 
         // M1: () with cursor inside  
+
         m1: m1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -43,6 +46,7 @@
         };
 
         // M2: [] with cursor inside
+
         m2: m2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -51,22 +55,33 @@
         };
 
         // M3: Terminal command
+
         m3: m3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(T))) &macro_wait_time 100 &kp LA(NUMBER_3)>;
+            bindings =
+                <&kp LG(LC(LA(T)))>,
+                <&macro_wait_time 100>,
+                <&kp LA(NUMBER_3)>;
+
             label = "M3";
         };
 
         // M4: Alt+7, Cmd+Enter
+
         m4: m4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_7) &macro_wait_time 100 &kp LG(ENTER)>;
+            bindings =
+                <&kp LA(NUMBER_7)>,
+                <&macro_wait_time 100>,
+                <&kp LG(ENTER)>;
+
             label = "M4";
         };
 
         // M5: Cmd+K, Cmd+[
+
         m5: m5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -75,6 +90,7 @@
         };
 
         // M6: Cmd+K, Cmd+]
+
         m6: m6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,6 +99,7 @@
         };
 
         // M7: Cmd+K, Cmd+0
+
         m7: m7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,14 +108,23 @@
         };
 
         // M8: Alt+Cmd+P
+
         m8: m8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &kp LGUI &macro_tap &kp P &macro_release &kp LALT &kp LGUI>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LGUI>,
+                <&macro_tap>,
+                <&kp P>,
+                <&macro_release>,
+                <&kp LALT &kp LGUI>;
+
             label = "M8";
         };
 
         // M9: ESC, ZZ (vim exit)
+
         m9: m9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -107,6 +133,7 @@
         };
 
         // M10: Ctrl+Cmd+Q
+
         m10: m10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,22 +142,33 @@
         };
 
         // M11: Alt+1, Ctrl+1
+
         m11: m11 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_1)>;
+            bindings =
+                <&kp LA(NUMBER_1)>,
+                <&macro_wait_time 100>,
+                <&kp LC(NUMBER_1)>;
+
             label = "M11";
         };
 
         // M12: Alt+1, Ctrl+2
+
         m12: m12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_2)>;
+            bindings =
+                <&kp LA(NUMBER_1)>,
+                <&macro_wait_time 100>,
+                <&kp LC(NUMBER_2)>;
+
             label = "M12";
         };
 
         // M13: Alt+Ctrl+Left
+
         m13: m13 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -139,6 +177,7 @@
         };
 
         // M14: Alt+Ctrl+Right
+
         m14: m14 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -147,34 +186,49 @@
         };
 
         // M15: "kubiya" text
+
         m15: m15 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-                <&macro_tap &kp K &kp U &kp B &kp I &kp Y &kp A>;
+            bindings = <&macro_tap>, <&kp K &kp U &kp B &kp I &kp Y &kp A>;
+
             label = "M15";
         };
 
         // M20: Ctrl+`, !!, Enter
+
         m20: m20 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(GRAVE) &macro_wait_time 100 &kp EXCL &kp EXCL &kp ENTER>;
+            bindings =
+                <&kp LC(GRAVE)>,
+                <&macro_wait_time 100>,
+                <&kp EXCL &kp EXCL &kp ENTER>;
+
             label = "M20";
         };
 
         // Legacy macros from original keymap
+
         arc1: arc1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_1)>;
+            bindings =
+                <&kp LA(NUMBER_1)>,
+                <&macro_wait_time 100>,
+                <&kp LC(NUMBER_1)>;
+
             label = "ARC1";
         };
 
         arc2: arc2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &macro_wait_time 100 &kp LC(NUMBER_2)>;
+            bindings =
+                <&kp LA(NUMBER_1)>,
+                <&macro_wait_time 100>,
+                <&kp LC(NUMBER_2)>;
+
             label = "ARC2";
         };
 
@@ -195,7 +249,11 @@
         term: term {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(T))) &macro_wait_time 30 &kp LA(NUMBER_3)>;
+            bindings =
+                <&kp LG(LC(LA(T)))>,
+                <&macro_wait_time 30>,
+                <&kp LA(NUMBER_3)>;
+
             label = "TERM";
         };
 
@@ -262,12 +320,14 @@
         compatible = "zmk,combos";
 
         // From Vial: T+G = semicolon (adapt key positions for 52-key layout)
+
         semicolon {
             bindings = <&kp SEMI>;
             key-positions = <18 31>; // T + G
         };
 
         // From Vial: G+B = pipe
+
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <31 44>;
@@ -300,7 +360,7 @@
 
         eql {
             bindings = <&kp EQUAL>;
-            key-positions =  <47 49>; // M + .
+            key-positions = <47 49>; // M + .
         };
 
         mo3 {
@@ -339,6 +399,7 @@
         };
 
         // Mouse button combos from Vial
+
         mouse1 {
             bindings = <&mkp LCLK>;
             key-positions = <14 29>; // Q + D
@@ -363,13 +424,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │ ⌘ │_ 2│ ↑ │     │ ⌃ │⏎ 1│ ⌥ │
         //             └───┴───┴───┘     └───┴───┴───┘
+
         base {
             bindings = <
-&bootloader   &none  &none  &none      &none         &none         &kp UP_ARROW     &none          &none         &none       &none       &td10        &bootloader
-&kp TAB       &kp Q  &kp W  &kp E      &kp R         &kp T         &kp DOWN_ARROW   &kp Y          &kp U         &kp I       &kp O       &kp P        &td10
-&kp ESC       &kp A  &kp S  &kp D      &kp F         &kp G         &kp LEFT_ARROW   &kp H          &kp J         &kp K       &kp L       &kp BSPC     &mkp MB4
-&kp GRAVE     &kp Z  &kp X  &kp C      &kp V         &kp B         &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA   &kp DOT     &kp SLASH    &kp LS(GRAVE)
-&none         &none  &none  &kp LGUI   &lt 2 SPACE   &kp LSHFT     &kp ENTER        &kp LCTRL      &lt 1 ENTER   &kp LALT    &kp C_MUTE  &none
+&bootloader  &none  &none  &none     &none        &none        &kp UP_ARROW     &none      &none        &none      &none       &td10      &bootloader
+&kp TAB      &kp Q  &kp W  &kp E     &kp R        &kp T        &kp DOWN_ARROW   &kp Y      &kp U        &kp I      &kp O       &kp P      &td10
+&kp ESC      &kp A  &kp S  &kp D     &kp F        &kp G        &kp LEFT_ARROW   &kp H      &kp J        &kp K      &kp L       &kp BSPC   &mkp MB4
+&kp GRAVE    &kp Z  &kp X  &kp C     &kp V        &kp B        &kp RIGHT_ARROW  &kp N      &kp M        &kp COMMA  &kp DOT     &kp SLASH  &kp LS(GRAVE)
+&none        &none  &none  &kp LGUI  &lt 2 SPACE  &kp LSHFT    &kp ENTER        &kp LCTRL  &lt 1 ENTER  &kp LALT   &kp C_MUTE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(Z)) LG(Z)>;
@@ -386,13 +448,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │GUI│SPC│SHF│     │CTL│RET│ALT│
         //             └───┴───┴───┘     └───┴───┴───┘
+
         symbols {
             bindings = <
-&bootloader  &none      &none            &none         &none          &none          &mmv MOVE_UP     &none         &none         &none         &none         &none             &bootloader
-&to 0        &parent    &kp SEMI         &kp DQT       &kp SQT        &kp DOLLAR     &mmv MOVE_DOWN   &kp CARET     &kp LA(N7)    &kp LA(N8)    &kp LA(N9)    &m11              &m12
-&kp ESC      &parent    &kp DOLLAR       &kp PERCENT   &kp AMPERSAND  &kp ASTERISK   &mmv MOVE_LEFT   &term         &kp LA(N4)    &kp LA(N5)    &kp LA(N6)    &m13              &m14
-&kp QMARK    &brackets  &kp EXCLAMATION  &kp AT        &kp HASH       &kp SEMI       &mmv MOVE_RIGHT  &kp LA(N0)    &kp LA(N1)    &kp LA(N2)    &kp LA(N3)    &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
-&none        &none      &none            &kp LGUI      &kp SPACE      &kp LSHFT      &mkp LCLK        &kp LCTRL     &kp RET       &kp LALT      &none         &none
+&bt BT_NXT  &none      &none            &none        &none          &none           &mmv MOVE_UP     &none       &none       &none       &none       &none             &bootloader
+&to 0       &parent    &kp SEMI         &kp DQT      &kp SQT        &kp DOLLAR      &mmv MOVE_DOWN   &kp CARET   &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &m11              &m12
+&kp ESC     &parent    &kp DOLLAR       &kp PERCENT  &kp AMPERSAND  &kp ASTERISK    &mmv MOVE_LEFT   &term       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &m13              &m14
+&kp QMARK   &brackets  &kp EXCLAMATION  &kp AT       &kp HASH       &kp SEMI        &mmv MOVE_RIGHT  &kp LA(N0)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
+&none       &none      &none            &kp LGUI     &kp SPACE      &kp LSHFT       &mkp LCLK        &kp LCTRL   &kp RET     &kp LALT    &none       &none
             >;
 
             display-name = "wp_sym";
@@ -409,13 +472,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │GUI│SPC│SHF│     │ALT│RET│CTL│
         //             └───┴───┴───┘     └───┴───┴───┘
+
         nav {
             bindings = <
-&bootloader    &none       &none       &none       &none       &none       &mmv MOVE_UP     &none      &none     &none      &none      &none         &bootloader
-&to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none       &mmv MOVE_DOWN   &foldall   &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
-&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &mmv MOVE_LEFT   &fold      &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
-&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4      &mmv MOVE_RIGHT  &expand    &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
-&trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT   &mkp MB4         &kp LALT   &kp RET   &kp LCTRL  &trans     &trans
+&bootloader    &none       &none       &none       &none       &none         &mmv MOVE_UP     &none     &none     &none      &none      &none         &bt BT_CLR
+&to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none         &mmv MOVE_DOWN   &foldall  &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
+&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &mmv MOVE_LEFT   &fold     &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
+&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4        &mmv MOVE_RIGHT  &expand   &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
+&trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT     &mkp MB4         &kp LALT  &kp RET   &kp LCTRL  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -431,13 +495,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │GUI│SPC│SHF│     │ . │ 0 │ALT│
         //             └───┴───┴───┘     └───┴───┴───┘
+
         numbers {
             bindings = <
-&bootloader  &none           &none           &none         &none         &none          &mmv MOVE_UP           &none         &none         &none       &none      &none         &bootloader
-&to 0        &kp N1          &kp N2          &kp N3        &kp N4        &kp N5         &mmv MOVE_DOWN         &none         &kp N7        &kp N8      &kp N9     &kp ASTERISK  &none
-&to 0        &kp LC(N1)      &kp LC(N2)      &kp LC(N3)    &kp LC(N4)    &none          &mmv MOVE_LEFT         &kp PLUS      &kp N4        &kp N5      &kp N6     &kp PLUS      &none
-&none        &none           &none           &none         &none         &none          &mmv MOVE_RIGHT        &kp MINUS     &kp N1        &kp N2      &kp N3     &kp MINUS     &kp DOT
-&trans       &trans          &trans          &kp LGUI      &kp SPACE     &kp LSHFT      &mkp MB4               &kp N0        &kp LALT      &trans      &trans     &trans
+&bootloader  &none       &none       &none       &none       &none        &mmv MOVE_UP     &none      &none     &none   &none   &none         &bootloader
+&to 0        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5       &mmv MOVE_DOWN   &none      &kp N7    &kp N8  &kp N9  &kp ASTERISK  &none
+&to 0        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &none        &mmv MOVE_LEFT   &kp PLUS   &kp N4    &kp N5  &kp N6  &kp PLUS      &none
+&none        &none       &none       &none       &none       &none        &mmv MOVE_RIGHT  &kp MINUS  &kp N1    &kp N2  &kp N3  &kp MINUS     &kp DOT
+&trans       &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT    &mkp MB4         &kp N0     &kp LALT  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
@@ -454,13 +519,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │GUI│   │CAP│     │CTL│   │ALT│
         //             └───┴───┴───┘     └───┴───┴───┘
+
         function {
             bindings = <
-&bootloader  &none    &none              &none           &none      &none              &mmv MOVE_UP     &none           &none         &none         &none             &none        &bootloader
-&to 0        &m9      &kp F2             &kp LG(F12)     &kp F12    &kp F9             &mmv MOVE_DOWN   &kp F5          &kp F10       &kp F11       &kp LS(F11)       &m8          &to 4
-&to 0        &m20     &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))      &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4        &m15          &kp LS(LG(L))     &none        &none
-&kp CAPS     &none    &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))  &mmv MOVE_RIGHT  &kp LS(F5)      &m4           &none         &none             &none        &caps_word
-&trans       &trans   &trans             &kp LGUI        &none      &caps_word         &kp ENTER        &kp LCTRL       &none         &kp LALT      &trans            &trans
+&bootloader  &none   &none              &none           &none      &none                &mmv MOVE_UP     &none           &none    &none     &none          &none   &bootloader
+&to 0        &m9     &kp F2             &kp LG(F12)     &kp F12    &kp F9               &mmv MOVE_DOWN   &kp F5          &kp F10  &kp F11   &kp LS(F11)    &m8     &to 4
+&to 0        &m20    &kp LC(LA(LG(S)))  &kp LS(LG(N4))  &kp LG(F)  &kp LS(LG(F))        &mmv MOVE_LEFT   &kp LS(LG(F5))  &kp F4   &m15      &kp LS(LG(L))  &none   &none
+&kp CAPS     &none   &none              &kp LS(LG(C))   &kp LG(V)  &kp LC(LA(LG(V)))    &mmv MOVE_RIGHT  &kp LS(F5)      &m4      &none     &none          &none   &caps_word
+&trans       &trans  &trans             &kp LGUI        &none      &caps_word           &kp ENTER        &kp LCTRL       &none    &kp LALT  &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
@@ -477,13 +543,14 @@
         // └───┴───┴───┼───┼───┼───┤     ├───┼───┼───┼───┴───┴───┘
         //             │▫▫▫│▫▫▫│▫▫▫│     │▫▫▫│▫▫▫│▫▫▫│
         //             └───┴───┴───┘     └───┴───┴───┘
+
         transparent {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
