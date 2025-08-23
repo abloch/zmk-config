@@ -81,7 +81,7 @@ layers:
   - $$mdi:progress-download$$
   - {t: base, h: toggle}
   - '&parent'
-  - {t: ;, s: ':'}
+  - ':'
   - '"'
   - {t: '''', s: '"'}
   - $
