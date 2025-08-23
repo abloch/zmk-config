@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: base, h: toggle}
-  - '&parent'
+  - '&M0'
   - ':'
   - '"'
   - {t: '''', s: '"'}
@@ -255,9 +255,9 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   function:
