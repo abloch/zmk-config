@@ -440,7 +440,7 @@
 
         // Layer 1: Symbols layer from Vial  
         // ┌───┬───┬───┬───┬───┬───┐     ┌───┬───┬───┬───┬───┬───┐
-        // │TO0│( )│ : │ " │ ' │ $ │mouse│ ^ │⌘ 7│⌘ 8│⌘ 9│M11│M12│
+        // │TO0│{ }│ : │ " │ ' │ $ │mouse│ ^ │⌘ 7│⌘ 8│⌘ 9│M11│M12│
         // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
         // │ESC│( )│ $ │ % │ & │ * │     │TRM│⌘ 4│⌘ 5│⌘ 6│M13│M14│
         // ├───┼───┼───┼───┼───┼───┤     ├───┼───┼───┼───┼───┼───┤
@@ -452,7 +452,7 @@
         symbols {
             bindings = <
 &bt BT_NXT  &none      &none            &none        &none          &none           &mmv MOVE_UP     &none       &none       &none       &none       &none             &bootloader
-&to 0       &parent    &kp COLON        &kp DQT      &kp SQT        &kp DOLLAR      &mmv MOVE_DOWN   &kp CARET   &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &m11              &m12
+&to 0       &M0    &kp COLON        &kp DQT      &kp SQT        &kp DOLLAR      &mmv MOVE_DOWN   &kp CARET   &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &m11              &m12
 &kp ESC     &parent    &kp DOLLAR       &kp PERCENT  &kp AMPERSAND  &kp ASTERISK    &mmv MOVE_LEFT   &term       &kp LA(N4)  &kp LA(N5)  &kp LA(N6)  &m13              &m14
 &kp QMARK   &brackets  &kp EXCLAMATION  &kp AT       &kp HASH       &kp SEMI        &mmv MOVE_RIGHT  &kp LA(N0)  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
 &none       &none      &none            &kp LGUI     &kp SPACE      &kp LSHFT       &mkp LCLK        &kp LCTRL   &kp RET     &kp LALT    &none       &none
@@ -498,11 +498,11 @@
 
         numbers {
             bindings = <
-&bootloader  &none       &none       &none       &none       &none        &mmv MOVE_UP     &none      &none     &none   &none   &none         &bootloader
-&to 0        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5       &mmv MOVE_DOWN   &none      &kp N7    &kp N8  &kp N9  &kp ASTERISK  &none
-&to 0        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &none        &mmv MOVE_LEFT   &kp PLUS   &kp N4    &kp N5  &kp N6  &kp PLUS      &none
-&none        &none       &none       &none       &none       &none        &mmv MOVE_RIGHT  &kp MINUS  &kp N1    &kp N2  &kp N3  &kp MINUS     &kp DOT
-&trans       &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT    &mkp MB4         &kp N0     &kp LALT  &trans  &trans  &trans
+&bootloader  &none       &none       &none       &none       &none        &mmv MOVE_UP     &none      &none     &none     &none   &none         &bootloader
+&to 0        &kp N1      &kp N2      &kp N3      &kp N4      &kp N5       &mmv MOVE_DOWN   &none      &kp N7    &kp N8    &kp N9  &kp ASTERISK  &none
+&to 0        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &none        &mmv MOVE_LEFT   &kp PLUS   &kp N4    &kp N5    &kp N6  &kp PLUS      &none
+&none        &none       &none       &none       &none       &none        &mmv MOVE_RIGHT  &kp MINUS  &kp N1    &kp N2    &kp N3  &kp MINUS     &kp DOT
+&trans       &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT    &mkp MB4         &none      &kp N0    &kp LALT  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder &scroll_encoder>;
