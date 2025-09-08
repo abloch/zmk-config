@@ -110,7 +110,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - {t: ;, s: ':'}
+  - ':'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: Alt+0, s: Alt+)}
   - {t: Alt+1, s: Alt+!}
