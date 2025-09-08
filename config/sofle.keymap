@@ -477,8 +477,8 @@
             bindings = <
 &bootloader    &none       &none       &none       &none       &none         &mmv MOVE_UP      &none     &none     &none      &none      &none         &bt BT_CLR
 &to 0          &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none         &mmv MOVE_DOWN    &foldall  &kp HOME  &kp UP     &kp PG_UP  &none         &to 0
-&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LC(KA(RIGHT)) &fold     &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
-&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4        &kp LC(KA(LEFT))  &expand   &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
+&kp ESC        &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &kp LC(LA(RIGHT)) &fold     &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(BSPC)  &kp LC(TAB)
+&kp LC(GRAVE)  &none       &none       &none       &kp LS(F4)  &kp F4        &kp LC(LA(LEFT))  &expand   &kp END   &kp DEL    &kp PG_DN  &kp LA(DEL)   &kp LC(GRAVE)
 &trans         &trans      &trans      &kp LGUI    &kp SPACE   &kp LSHFT     &mkp MB4          &kp LALT  &kp RET   &kp LCTRL  &trans     &trans
             >;
 
