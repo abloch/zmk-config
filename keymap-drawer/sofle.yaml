@@ -163,7 +163,7 @@ layers:
   - {t: Ctl+3, s: Ctl+#}
   - {t: Ctl+4, s: Ctl+$, type: held alternate}
   - {t: Ctl+5, s: Ctl+%}
-  - Ctl+Alt+$$mdi:arrow-right-bold$$
+  - Ctl+Alt+$$mdi:arrow-left-bold$$
   - '&fold'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Sft+F4
   - F4
-  - Ctl+Alt+$$mdi:arrow-left-bold$$
+  - Ctl+Alt+$$mdi:arrow-right-bold$$
   - '&expand'
   - END
   - $$mdi:backspace-reverse-outline$$
