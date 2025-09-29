@@ -190,9 +190,9 @@ layers:
   - {t: '$$mdi:keyboard-space$$', type: held}
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB4'
-  - $$mdi:apple-keyboard-option$$
+  - LCTL
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   numbers:
