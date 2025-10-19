@@ -321,7 +321,7 @@ layers:
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
-  - Alt+Sft+$$mdi:keyboard-space$$
+  - Gui+Sft+$$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
