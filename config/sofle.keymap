@@ -353,7 +353,7 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <28 16>; // S + E (Corne 15 4 → Sofle 28 16)
+            key-positions = <29 17>; // S + E (Corne 15 4 → Sofle 28 16)
         };
 
         backslash {
