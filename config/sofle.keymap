@@ -343,12 +343,12 @@
 
         semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <17 30>; // R + F (Corne 5 17 → Sofle 17 30)
+            key-positions = <31 18>; // R + F (Corne 5 17 → Sofle 17 30)
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <30 43>; // G + B (Corne 17 29 → Sofle 30 43)
+            key-positions = <31 44>; // G + B (Corne 17 29 → Sofle 30 43)
         };
 
         slash {
