@@ -301,7 +301,7 @@ layers:
   - Gui+F8
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&thisisunsafe'
   - Gui+Sft+4
   - Sft+Gui+C
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
@@ -399,7 +399,7 @@ combos:
   k: {t: /, s: '?'}
 - p: [16, 29]
   k: {t: \, s: '|'}
-- p: [28, 29]
+- p: [28, 30]
   k: {t: '-', s: _}
 - p: [41, 43]
   k: _
