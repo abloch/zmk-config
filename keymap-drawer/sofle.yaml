@@ -391,9 +391,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [17, 30]
+- p: [31, 18]
   k: {t: ;, s: ':'}
-- p: [30, 43]
+- p: [31, 44]
   k: '|'
 - p: [29, 17]
   k: {t: /, s: '?'}

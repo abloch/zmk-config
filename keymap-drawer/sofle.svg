@@ -632,13 +632,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
@@ -1070,13 +1070,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
@@ -1516,13 +1516,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
@@ -1970,13 +1970,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
@@ -2426,13 +2426,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
@@ -2883,13 +2883,13 @@ rect.held, rect.combo.held {
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="238" y="106" width="28" height="26" class="combo"/>
-<text x="252" y="119" class="combo tap">;</text>
-<text x="252" y="108" class="combo shifted">:</text>
+<rect rx="6" ry="6" x="294" y="106" width="28" height="26" class="combo"/>
+<text x="308" y="119" class="combo tap">;</text>
+<text x="308" y="108" class="combo shifted">:</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="238" y="162" width="28" height="26" class="combo"/>
-<text x="252" y="175" class="combo tap">|</text>
+<rect rx="6" ry="6" x="294" y="162" width="28" height="26" class="combo"/>
+<text x="308" y="175" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
