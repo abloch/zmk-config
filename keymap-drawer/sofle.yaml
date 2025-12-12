@@ -423,3 +423,9 @@ combos:
   k: $$mdi:mouse-right-click-outline$$
 - p: [47, 48, 49]
   k: {t: function, h: '$$mdi:gesture-tap-hold$$'}
+- p: [12, 0]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+- p: [12, 1]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+- p: [12, 2]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
