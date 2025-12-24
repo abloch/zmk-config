@@ -429,3 +429,11 @@ combos:
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
 - p: [12, 2]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+- p: [12, 13]
+  k: {t: BT DISC, h: '0'}
+- p: [12, 14]
+  k: {t: BT DISC, h: '1'}
+- p: [12, 15]
+  k: {t: BT DISC, h: '2'}
+- p: [12, 0, 1, 2]
+  k: BT CLR ALL
