@@ -423,19 +423,19 @@ combos:
   k: $$mdi:mouse-right-click-outline$$
 - p: [47, 48, 49]
   k: {t: function, h: '$$mdi:gesture-tap-hold$$'}
-- p: [12, 0]
+- p: [13, 25]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
-- p: [12, 1]
+- p: [14, 25]
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
-- p: [12, 2]
+- p: [15, 25]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
-- p: [12, 13]
+- p: [26, 25]
   k: {t: BT DISC, h: '0'}
-- p: [12, 14]
+- p: [27, 25]
   k: {t: BT DISC, h: '1'}
-- p: [12, 15]
+- p: [28, 25]
   k: {t: BT DISC, h: '2'}
-- p: [12, 0, 1, 2]
+- p: [13, 26, 39, 25]
   k: BT CLR ALL
-- p: [12, 0, 13]
+- p: [13, 26, 25]
   k: $$mdi:bluetooth-off$$
