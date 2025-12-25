@@ -439,3 +439,7 @@ combos:
   k: BT CLR ALL
 - p: [13, 26, 25]
   k: $$mdi:bluetooth-off$$
+- p: [26, 27]
+  k: {t: '[', s: '{'}
+- p: [27, 28]
+  k: {t: ']', s: '}'}
