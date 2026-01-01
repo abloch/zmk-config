@@ -299,7 +299,7 @@ layers:
   - {t: '&m15', type: held}
   - {t: Sft+Gui+L, type: held}
   - Gui+F8
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Ctl+Gui+Alt+\, s: Ctl+Gui+Alt+|}
   - $$mdi:apple-keyboard-caps$$
   - '&thisisunsafe'
   - Gui+Sft+4
