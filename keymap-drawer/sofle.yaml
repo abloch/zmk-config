@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-control$$
+  - '&control_record'
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - '&alt5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
